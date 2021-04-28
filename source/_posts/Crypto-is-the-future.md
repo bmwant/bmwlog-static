@@ -1,7 +1,7 @@
 ---
 title: Crypto is the future
 date: 2021-04-28 12:48:27
-tags: crypto, bitcoin
+tags: [crypto, bitcoin]
 ---
 
 *Disclaimer*: I do own crypto and I'm interested in the price appreciation for material gain, so if you think I'll be totally biased and subjective on the matter you should probably stop reading here.
