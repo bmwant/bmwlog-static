@@ -1,7 +1,16 @@
+### Installation
+
 ```bash
 $ npm install
 $
 ```
+
+### Editing
+```bash
+$ hexo new [layout] <title>  # check `scaffolds` directory for available layouts
+$ hexo new post "Test post"
+```
+
 
 ### Deployment
 ```bash
