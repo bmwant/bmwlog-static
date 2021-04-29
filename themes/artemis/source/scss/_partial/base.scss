@@ -1,3 +1,5 @@
+$orange-color: #ffc04f;
+
 .post-content *::selection {
   color: #ffffff;
   background-color: #fd797b;
@@ -38,7 +40,7 @@ a.nav-list-link {
   text-decoration: none;
   display: inline-block;
   color: black;
-  padding: 0 -2px;
+  padding: 0 1px;
   transition: color ease 0.3s;
 
   &::after {
@@ -50,7 +52,7 @@ a.nav-list-link {
     left: 0;
     bottom: 0;
     background-color: #42b983;
-    transition: all ease 0.3s;
+    transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
   }
 
   &:hover {
@@ -66,9 +68,39 @@ a.nav-list-link.active {
   border-bottom: 4px solid #42b983;
 }
 
-a.post-title-link:hover {
-  border-bottom: 4px solid #42b983;
+a.post-title-link {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+  padding: 0 2px;
+  transition: color ease 0.3s;
+
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: calc(100% + 20px);
+    height: 0;
+    left: -10px;
+    bottom: 0;
+    background-color: $orange-color;
+    transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);;
+  }
+
+  &:hover {
+    // color: white;
+
+    &::after {
+      height: 100%;
+    }
+  }
 }
+
+
+// a.post-title-link:hover {
+//   border-bottom: 4px solid #42b983;
+// }
 
 hr {
     border: 0;
