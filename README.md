@@ -1,8 +1,13 @@
+## bmwlog
+This is static blog website generated with Hexo using [Artemis](https://github.com/Dreyer/hexo-theme-artemis) theme.
+
+🌎 Checkout [the website](https://bmwlog.pp.ua/)
+
 ### Installation
 
 ```bash
 $ npm install
-$
+$ cd themes/artemis && npm run build  # rebuild theme with different params
 ```
 
 ### Editing

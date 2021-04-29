@@ -20,6 +20,8 @@ In this article I want to address some misconceptions about crypto currencies an
 
 Another section goes here
 
+Any precedent like this one drives forward a development of better protection It reminds me of an [Arms race](https://en.wikipedia.org/wiki/Arms_race) which isn't necessary a good thing, but it allows technologies to develop faster and eventually to be applied for peacful purposes.
+
 ### It has no real value
 
 > The value is 100% imaginary. The system is based on a perceived value, and given people are in and out to make money off that perception: it’s basically a pyramid scheme.
