@@ -13,12 +13,24 @@ In this article I want to address some misconceptions about crypto currencies an
 
 ### It's just a waste of electricity
 
+First of all let's understand the [difference between](https://academy.binance.com/en/glossary/proof-of-stake) these two: [Proof of Work](https://en.wikipedia.org/wiki/Proof_of_work) and [Proof of Stake](https://en.wikipedia.org/wiki/Proof_of_stake). They are two main blockchain protocols, but the latter doesn't require a lot of computational power therefore it consumes less energy and has smaller impact on the environment.
+Think of it as of v2 (next generation) consensus mechanism for the blockchain. Ethereum network (which is the [second largest](https://coinmarketcap.com/currencies/ethereum/) crypto by market capitalization) is [going to switch](https://ethereum.org/en/eth2/) to the PoS soon.
+
+Any new technology at its early steps has a lot of drawbacks and that's an integral part of a developing lifecycle. Eventually less efficient methods and [shitcoins](https://www.investopedia.com/terms/s/shitcoin.asp) without any utility will fade away driving evolution forward. What I'm trying to say here is that we are on the transition stage right now and a lot of [research](https://eprint.iacr.org/2016/889.pdf) is being done to come up with better algorithms for distributed networks.
+
+Although some studies [show](https://www.statista.com/statistics/881541/bitcoin-energy-consumption-transaction-comparison-visa/) that Bitcoin uses much more energy per transaction - in a big picture it doesn't look so horrible as most of the electricity [comes from renewables](https://coinshares.com/assets/resources/Research/bitcoin-mining-network-june-2019-fidelity-foreword.pdf) (see summary table below) and it still requires less power than current generation of banking system.
+
 ![renewables](/images/m0a0sf0jckk61.jpg)
 
+On the other side Bitcoin and other PoW currencies [incentivize evolution](http://squ.re/BCEI-whitepaper) of renewables and different approaches to obtain cheapest available electricity.
+
+![incentivizes renewables](/images/photo_2021-04-29_13-06-26.png)
 
 ### Hardware shortage everywhere
 
 Another section goes here
+
+~~ CI abuse here ~~
 
 Any precedent like this one drives forward a development of better protection It reminds me of an [Arms race](https://en.wikipedia.org/wiki/Arms_race) which isn't necessary a good thing, but it allows technologies to develop faster and eventually to be applied for peacful purposes.
 
