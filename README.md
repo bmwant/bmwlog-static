@@ -1,7 +1,7 @@
 ## bmwlog
 This is static blog website generated with Hexo using [Artemis](https://github.com/Dreyer/hexo-theme-artemis) theme.
 
-🌎 Checkout [the website](https://bmwlog.pp.ua/)
+🌎 Check [the website](https://bmwlog.pp.ua/)
 
 ### Installation
 
@@ -23,4 +23,11 @@ $ firebase init  # first time only
 $ hexo clean  # just to make sure old/removed pages are cleaned up
 $ hexo generate
 $ firebase deploy --only hosting
+```
+
+or simply
+
+```bash
+$ hexo deploy
+$ hexo deploy -g  # to generate site before deployment
 ```

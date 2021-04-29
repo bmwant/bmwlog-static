@@ -993,6 +993,11 @@
     "resolve" "^1.11.0"
     "tildify" "^2.0.0"
 
+"hexo-deployer-shell@^0.2.3":
+  "integrity" "sha1-FMR5YljzSGbfZYFOcmv10Q/+noY="
+  "resolved" "https://registry.npmjs.org/hexo-deployer-shell/-/hexo-deployer-shell-0.2.3.tgz"
+  "version" "0.2.3"
+
 "hexo-front-matter@^2.0.0":
   "integrity" "sha512-IR3tjAyK2Ga/0a/WDAoNy5+n3ju2/mkuAsCDEeGgGLf5+7kkiOkkG/FrnueuYgz0h2MPfWDLBiDsSTCmB0sLCA=="
   "resolved" "https://registry.npmjs.org/hexo-front-matter/-/hexo-front-matter-2.0.0.tgz"
