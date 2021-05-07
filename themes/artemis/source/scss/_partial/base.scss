@@ -81,19 +81,10 @@ a.post-title-link {
     position: absolute;
     z-index: -1;
     width: calc(100% + 20px);
-    height: 0;
+    height: 100%;
     left: -10px;
     bottom: 0;
     background-color: $orange-color;
-    transition: all 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);;
-  }
-
-  &:hover {
-    // color: white;
-
-    &::after {
-      height: 100%;
-    }
   }
 }
 

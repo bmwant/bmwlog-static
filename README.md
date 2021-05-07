@@ -14,8 +14,8 @@ $ cd themes/artemis && npm run build  # rebuild theme with different params
 ```bash
 $ hexo new [layout] <title>  # check `scaffolds` directory for available layouts
 $ hexo new post "Test post"
+$ hexo new draft "New draft"
 ```
-
 
 ### Deployment
 ```bash

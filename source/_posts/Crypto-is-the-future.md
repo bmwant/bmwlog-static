@@ -8,8 +8,9 @@ tags: [crypto, bitcoin]
 
 ### Intro
 
-In this article I want to address some misconceptions about crypto currencies and highlight main points why I believe it will inevitably become a part of your life and eventually replace I don't think that Bitcoin or any other cryptocurrency is perfect, but it's still on early stage of developing and adopting, so most of the flaws will vanish in the nearest future. Therefore let me show you couple of the current cases against and provide arguments to support the world of crypto. Below you will find a list of statements and opposing facts which should provide context for better understanding of how thing actually work.
+![money evolution](/images/photo_2021-04-30_12-51-27.png)
 
+In this article I want to address some misconceptions about crypto currencies and highlight main points why I believe it will inevitably become a part of our lives and eventually replace existing financial institutions. I don't think that Bitcoin or any other cryptocurrency is perfect, but it's still on early stage of developing and adopting, so most of the flaws will vanish in the nearest future. Therefore let me show you couple of the current cases against and provide arguments to support the world of crypto. Below you will find a list of statements and opposing facts which should provide context for better understanding of how thing actually work.
 
 ### It's just a waste of electricity
 
@@ -44,7 +45,14 @@ Do not confuse [pyramids](https://www.investopedia.com/terms/p/pyramidscheme.asp
 
 ### Everyone involved is only doing this to make money
 
-Continuations of the arguments above...
+![where lamba](/images/photo_2021-04-30_13-21-27.jpg)
+
+Nobody forces you to buy crypto as well as nobody forces you to [panic selling](https://en.wikipedia.org/wiki/Panic_selling) it giving profits to others. On the other hand every employee does his job to make money and that's totally normal. Why then? Furthermore, you don't criticize people for selling something they own to others and it doesn't matter whether it's something on [Etsy](https://www.etsy.com/) / [ebay](https://www.ebay.com/) or crypto on the exchange.
+
+Like in every domain where you do investments you should do your own research ([DYOR](https://academy.binance.com/en/glossary/do-your-own-research)) before throwing money into something. Most of the videos on youtube or articles on the web I've came across also emphasize on `not a financial advice` narrative, so the final decision is always up to you. When you see something involving high risks you have to understand that you invest only as much as you afford to lose.
+
+Casinos and lottery?
+
 
 ### It drastically affects global warming
 
@@ -63,7 +71,7 @@ First of all it's all about decentralization. No one controls or limits your abi
 * verifying digital scarcity with a proven authenticity for collectibles ([read more](https://medium.com/ecomi/the-benefit-of-blockchain-for-digital-collectibles-a3062fc44d70))
 * creating competitive solutions for existing projects with extra benefits (one example of it can be [digital advertising platform](https://basicattentiontoken.org/) allowing advertisers know their ads’ effectiveness without violating privacy)
 
-...and a lot more. Only [Cardano](https://cardano.org/enterprise/) blockchain by itself comes up with variety of solutions across multiple industry verticals.  ~~~iohnk project quantum resistance~~~
+...and a lot more. Only [Cardano](https://cardano.org/enterprise/) blockchain by itself comes up with variety of solutions across multiple industry verticals. IOHK ~~money research~~ and works on fundamenatal cryptography problems such as [quantum resistance](https://iohk.io/en/blog/posts/2018/02/01/research-program-to-work-on-hardening-cardano-against-quantum-computers/).
 
 
 ### Conclusion
