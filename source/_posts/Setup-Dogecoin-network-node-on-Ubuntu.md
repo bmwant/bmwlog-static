@@ -1,8 +1,14 @@
 ---
 title: Setup Dogecoin network node on Ubuntu
+tags:
+  - doge
+  - dogecoin
+  - crypto
+  - ubuntu
 author: Misha Behersky
-tags: ['doge', 'dogecoin', 'crypto', 'ubuntu']
+date: 2021-05-15 15:45:12
 ---
+
 
 ![doge pic](/images/dh7sjwznlgx61.jpg)
 

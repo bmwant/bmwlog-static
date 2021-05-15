@@ -8,6 +8,7 @@ This is static blog website generated with Hexo using [Artemis](https://github.c
 ```bash
 $ npm install
 $ cd themes/artemis && npm run build  # rebuild theme with different params
+$ npm run server  # check website locally
 ```
 
 ### Editing
@@ -15,6 +16,7 @@ $ cd themes/artemis && npm run build  # rebuild theme with different params
 $ hexo new [layout] <title>  # check `scaffolds` directory for available layouts
 $ hexo new post "Test post"
 $ hexo new draft "New draft"
+$ hexo publish post "New draft"
 ```
 
 ### Deployment
