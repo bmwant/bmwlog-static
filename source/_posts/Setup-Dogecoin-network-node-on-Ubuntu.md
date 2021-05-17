@@ -128,7 +128,7 @@ $ screen -ls  # list all active sessions
 $ screen -r doge  # connect back to our shell
 ```
 
-lists all active session and `-r` flag restores a session specified by it's name.
+Here `-ls` option lists all active session and `-r` flag restores a session specified by it's name.
 
 ### Creating a service
 

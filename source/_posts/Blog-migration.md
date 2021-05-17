@@ -4,38 +4,17 @@ author: Misha Behersky
 date: 2021-04-27 15:15:10
 ---
 
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
+Recently I've decided to migrate my blog written with [Flask](https://flask.palletsprojects.com/en/latest/)/Python 3 to be a SPA using [Vue.js](https://vuejs.org/). Due to a lack of free time I don't see this migration to be finished in the nearest future.
 
-## Quick Start
+To continue publishing some notes online I went for [Hexo](https://hexo.io/) static site generator which allows quickly create new posts using simple [Markdown](https://www.markdownguide.org/) syntax and deploy them either to [Github Pages](https://pages.github.com/) or to [Firebase Hosting](https://firebase.google.com/docs/hosting) (the latter one was chosen).
 
-### Create a new post
+Below you can find a couple of screenshots for the previous version of the blog to have a taste of how it was looking back the good old days.
 
-``` bash
-$ hexo new "My New Post"
-```
+### Index/posts page
+![index](/images/blog1.png)
 
-More info: [Writing](https://hexo.io/docs/writing.html)
+### Instagram zone page
+![gallery](/images/blog2.png)
 
-### Run server
-
-``` bash
-$ hexo server
-```
-
-More info: [Server](https://hexo.io/docs/server.html)
-
-### Generate static files
-
-``` bash
-$ hexo generate
-```
-
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-``` bash
-$ hexo deploy
-```
-
-More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+### About page
+![about](/images/blog3.png)
