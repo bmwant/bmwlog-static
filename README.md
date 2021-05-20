@@ -22,6 +22,7 @@ $ hexo publish post "New draft"
 ### Deployment
 ```bash
 $ firebase init  # first time only
+$ firebase init hosting:github  # setup automated deployment via Github Actions
 $ hexo clean  # just to make sure old/removed pages are cleaned up
 $ hexo generate
 $ firebase deploy --only hosting
