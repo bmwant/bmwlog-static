@@ -71,7 +71,7 @@ First of all it's all about decentralization. No one controls or limits your abi
 * verifying digital scarcity with a proven authenticity for collectibles ([read more](https://medium.com/ecomi/the-benefit-of-blockchain-for-digital-collectibles-a3062fc44d70))
 * creating competitive solutions for existing projects with extra benefits (one example of it can be [digital advertising platform](https://basicattentiontoken.org/) allowing advertisers know their ads’ effectiveness without violating privacy)
 
-...and a lot more. Only [Cardano](https://cardano.org/enterprise/) blockchain by itself comes up with variety of solutions across multiple industry verticals. IOHK ~~money research~~ and works on fundamenatal cryptography problems such as [quantum resistance](https://iohk.io/en/blog/posts/2018/02/01/research-program-to-work-on-hardening-cardano-against-quantum-computers/).
+...and a lot more. Only [Cardano](https://cardano.org/enterprise/) blockchain by itself comes up with variety of solutions across multiple industry verticals. IOHK ~money research~ JUst testing an update form CI and works on fundamenatal cryptography problems such as [quantum resistance](https://iohk.io/en/blog/posts/2018/02/01/research-program-to-work-on-hardening-cardano-against-quantum-computers/).
 
 
 ### Conclusion
