@@ -2,6 +2,7 @@
 title: Crypto is the future
 date: 2021-04-28 12:48:27
 tags: [crypto, bitcoin]
+author: Misha Behersky
 ---
 
 *Disclaimer*: I do own crypto and I'm interested in the price appreciation for material gain, so if you think I'll be totally biased and subjective on the matter you should probably stop reading here.
@@ -47,11 +48,11 @@ Do not confuse [pyramids](https://www.investopedia.com/terms/p/pyramidscheme.asp
 
 ![where lamba](/images/photo_2021-04-30_13-21-27.jpg)
 
-Nobody forces you to buy crypto as well as nobody forces you to [panic selling](https://en.wikipedia.org/wiki/Panic_selling) it giving profits to others. On the other hand every employee does his job to make money and that's totally normal. Why then? Furthermore, you don't criticize people for selling something they own to others and it doesn't matter whether it's something on [Etsy](https://www.etsy.com/) / [ebay](https://www.ebay.com/) or crypto on the exchange.
+Nobody forces you to buy crypto as well as nobody forces you to [panic selling](https://en.wikipedia.org/wiki/Panic_selling) it giving profits to others. On the other hand every employee does his job to make money and that's totally normal. It's human nature to fight for the resources and accumulate them over time. As most developed species we tend to move from wars and violence and establish fairer rules for the society, so everyone comes up with different methods to upbuild his wealth. Furthermore, you don't criticize people for selling something they own to others and it doesn't matter whether it's something on [Etsy](https://www.etsy.com/) / [ebay](https://www.ebay.com/) or crypto on the exchange.
 
 Like in every domain where you do investments you should do your own research ([DYOR](https://academy.binance.com/en/glossary/do-your-own-research)) before throwing money into something. Most of the videos on youtube or articles on the web I've came across also emphasize on `not a financial advice` narrative, so the final decision is always up to you. When you see something involving high risks you have to understand that you invest only as much as you afford to lose.
 
-Casinos and lottery?
+Casinos and lottery? not just a gamling for [addicted](https://en.wikipedia.org/wiki/Problem_gambling).
 
 
 ### It drastically affects global warming
