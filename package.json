@@ -6,7 +6,8 @@
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "firebase deploy --only hosting",
-    "serve": "hexo server --draft"
+    "serve": "hexo server",
+    "serve-drafts": "hexo server --draft"
   },
   "hexo": {
     "version": "5.4.0"
