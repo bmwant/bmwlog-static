@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- The 11 cubic nets, which are of course hexominoes R. A. Nonenmacher  12-Sep-2008 -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version     = "1.1"
+     id          = "Hexominoes"
+     baseProfile = "full"
+     xmlns       = "http://www.w3.org/2000/svg"
+     xmlns:xlink = "http://www.w3.org/1999/xlink"
+     xmlns:ev    = "http://www.w3.org/2001/xml-events"
+     width       = "300"
+     height      = "140">
+<defs>
+   <style type="text/css"> <![CDATA[
+      path { fill         : none;
+             stroke       : #000;
+             stroke-width : 0.15px }
+      .t { fill : #AAA }
+      .u { fill : #D99 }
+      .w { fill : #AAD } ]]>
+   </style>
+   <rect id="S" width="1" height="1" stroke="#000" stroke-width="0.02"/>
+   <g id="s1"><use xlink:href="#S"/></g>
+   <g id="s2"><use xlink:href="#S"/><use xlink:href="#s1" y="1"/></g>
+   <g id="s3"><use xlink:href="#S"/><use xlink:href="#s2" y="1"/></g>
+   <g id="s4"><use xlink:href="#S"/><use xlink:href="#s3" y="1"/></g>
+   <g id="H1" class="u"><use xlink:href="#s1" y="2"/><use xlink:href="#s4" x="1" y="2"/><use xlink:href="#s1" x="2" y="2"/><path d="M0,2h3v1h-1v3h-1v-3h-1z"/></g>
+   <g id="H2" class="t"><use xlink:href="#s1" y="3"/><use xlink:href="#s4" x="1" y="2"/><use xlink:href="#s1" x="2" y="2"/><path d="M0,3h1v-1h2v1h-1v3h-1v-2h-1z"/></g>
+   <g id="H3" class="t"><use xlink:href="#s1" y="4"/><use xlink:href="#s4" x="1" y="2"/><use xlink:href="#s1" x="2" y="2"/><path d="M0,4h1v-2h2v1h-1v3h-1v-1h-1z"/></g>
+   <g id="H4" class="w"><use xlink:href="#s1" y="5"/><use xlink:href="#s4" x="1" y="2"/><use xlink:href="#s1" x="2" y="2"/><path d="M0,5h1v-3h2v1h-1v3h-2z"/></g>
+   <g id="H5" class="w"><use xlink:href="#s1" y="4"/><use xlink:href="#s4" x="1" y="2"/><use xlink:href="#s1" x="2" y="3"/><path d="M0,4h1v-2h1v1h1v1h-1v2h-1v-1h-1z"/></g>
+   <g id="H6" class="u"><use xlink:href="#s1" y="3"/><use xlink:href="#s4" x="1" y="2"/><use xlink:href="#s1" x="2" y="3"/><path d="M0,3h1v-1h1v1h1v1h-1v2h-1v-2h-1z"/></g>
+   <g id="H7" class="t"><use xlink:href="#s1" y="3"/><use xlink:href="#s3" x="1" y="3"/><use xlink:href="#s2" x="2" y="2"/><path d="M0,3h2v-1h1v2h-1v2h-1v-2h-1z"/></g>
+   <g id="H8" class="t"><use xlink:href="#s1" y="4"/><use xlink:href="#s3" x="1" y="3"/><use xlink:href="#s2" x="2" y="2"/><path d="M0,4h1v-1h1v-1h1v2h-1v2h-1v-1h-1z"/></g>
+   <g id="H9" class="t"><use xlink:href="#s2" y="4"/><use xlink:href="#s3" x="1" y="2"/><use xlink:href="#s1" x="2" y="2"/><path d="M0,4h1v-2h2v1h-1v2h-1v1h-1z"/></g>
+   <g id="H10" class="w"><use xlink:href="#s2" y="4"/><use xlink:href="#s2" x="1" y="3"/><use xlink:href="#s2" x="2" y="2"/><path d="M0,4h1v-1h1v-1h1v2h-1v1h-1v1h-1z"/></g>
+   <g id="H11" class="w"><use xlink:href="#s3" y="3"/><use xlink:href="#s3" x="1" y="1"/><path d="M0,3h1v-2h1v3h-1v2h-1z"/></g>
+</defs>
+<use xlink:href="#H1" transform="translate(15,-15) scale(13)"/>
+<use xlink:href="#H2" transform="translate(75,-15) scale(13)"/>
+<use xlink:href="#H3" transform="translate(125,-15) scale(13)"/>
+<use xlink:href="#H4" transform="translate(185,-15) scale(13)"/>
+<use xlink:href="#H5" transform="translate(235,-15) scale(13)"/>
+<use xlink:href="#H6" transform="translate(10,50) scale(13)"/>
+<use xlink:href="#H7" transform="translate(60,50) scale(13)"/>
+<use xlink:href="#H8" transform="translate(110,50) scale(13)"/>
+<use xlink:href="#H9" transform="translate(160,50) scale(13)"/>
+<use xlink:href="#H10" transform="translate(210,50) scale(13)"/>
+<use xlink:href="#H11" transform="translate(260,50) scale(13)"/>
+</svg>
