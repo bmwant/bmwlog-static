@@ -3,6 +3,7 @@ title: Задачки #1
 date: 2015-04-29 13:25:58
 tags: [python, логіка]
 author: Misha Behersky
+language: ua
 ---
 
 <h3>Знайти помилку в коді</h3>

@@ -3,6 +3,7 @@ title: Знайомство з Pyramid
 date: 2015-05-29 13:04:44
 tags: [python, pyramid, web, framework]
 author: Misha Behersky
+language: ua
 ---
 
 <p><a href="http://www.pylonsproject.org/" target="_blank">Pyramid </a>- один з популярних <a href="http://wsgi.readthedocs.org/en/latest/" target="_blank">WSGI&nbsp;</a>веб-фреймворків для Пайтона, який містить багато вбудованих компонентів для швидкої розробки вашого проекту. Сумісний з Python 3.</p>
