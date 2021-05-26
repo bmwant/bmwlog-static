@@ -18,14 +18,14 @@ mixin posts()
         - page.posts.each(function (item) {
             li.post-list-item
                 article.post-block
-                    h2.post-title
+                    .post-title
                         a.post-title-link(href=url_for(item.path))
                             +postTitle(item.title)
                     +postInfo(item)
                     .post-content
                         != item.excerpt
-                    a.read-more(href=url_for(item.path))
-                        != __('read_more')
+                    //- a.read-more(href=url_for(item.path))
+                    //-     != __('read_more')
         - })
 
 //- Archive Page

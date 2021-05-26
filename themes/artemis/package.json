@@ -4,7 +4,8 @@
   "description": "A minimalist Hexo theme inspired by the Apollo theme",
   "main": "index.js",
   "scripts": {
-    "build": "grunt build"
+    "build": "grunt build",
+    "watch": "grunt watch"
   },
   "repository": {
     "type": "git",

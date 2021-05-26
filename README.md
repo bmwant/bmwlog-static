@@ -12,6 +12,8 @@ This is static blog website generated with [Hexo](https://hexo.io/) using [Artem
 $ npm install
 $ cd themes/artemis && npm run build  # rebuild theme with different params
 $ npm run serve  # check website locally
+
+$ cd themes/artemis && npm run watch  # for developing and changing styles
 ```
 
 ### Editing
