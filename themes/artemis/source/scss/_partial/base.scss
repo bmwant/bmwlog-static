@@ -14,7 +14,7 @@ body {
   font-size: 15px;
   line-height: 1.6;
   background-color: #fff;
-  font-family: 'sourcesanspro', 'Helvetica Neue', Arial, sans-serif;
+  font-family: $font-family;
 }
 
 ul.nav,
@@ -116,17 +116,17 @@ iframe, video {
 }
 
 table {
-    padding: 0;
-    th {
-        font-weight: bold;
-        border: 1px solid #c6cbd1;
-        text-align: left;
-        margin: 0;
-        padding: 6px 13px;
-    }
-    thead {
-        background-color: #fff;
-    }
+  padding: 0;
+  th {
+    font-weight: bold;
+    border: 1px solid #c6cbd1;
+    text-align: left;
+    margin: 0;
+    padding: 6px 13px;
+  }
+  thead {
+      background-color: #fff;
+  }
     tbody {
         tr {
             border-top: 1px solid #c6cbd1;
