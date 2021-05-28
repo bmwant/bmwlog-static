@@ -2,11 +2,28 @@
   padding-top: 1em;
 }
 
+.home-post-block {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  .home-post-title {
+    margin: 0.65em 0;
+    color: #2c3e50;
+    font-size: 1.2em;
+  }
+
+  .post-info {
+    color: #7f8c8d;
+    margin: 0.2em 1em 0.2em 0;
+  }
+}
+
 .post-block {
   .post-title {
     margin: 0.65em 0;
     color: #2c3e50;
-    font-size: 1.5em;
+    font-size: 1.6em;
   }
 
   .post-info {
@@ -16,154 +33,154 @@
         margin-left: 0.5rem;
     }
     a.post-from {
-        margin-left: 0.5rem;
-        padding: 3px 6px;
-        border-radius: 5px;
-        font-size: 12px;
-        color: white;
-        background-color: #E36B6B;
+      margin-left: 0.5rem;
+      padding: 3px 6px;
+      border-radius: 5px;
+      font-size: 12px;
+      color: white;
+      background-color: #E36B6B;
     }
   }
 }
 
 .post-content {
-    h2, h3, h4, h5, h6 {
-        position: relative;
-        margin: 1em 0;
-        a:before {
-            content: "#";
-            color: #42b983;
-            position: absolute;
-            left: -0.7em;
-            top: -4px;
-            font-size: 1.2em;
-            font-weight: bold;
-        }
-    }
-    h4, h5, h6 {
-        a:before {
-            content: "";
-        }
-    }
-    h2, h3 {
-        font-size: 1.4em;
-    }
-    h4, h5, h6 {
-        font-size: 1.3em;
-    }
-    a {
-        color: #42b983;
-        word-break: break-all;
-    }
-    blockquote {
-        margin: 2em 0;
-        padding: 0.5em 1.3em;
-        border: 1px solid #eee;
-        border-radius: 3px;
-        border-left-color: #42b983;
-        border-left-width: 4px;
-    }
-    blockquote.warning {
-        border-left-color: #f0ad4e;
-        border-left-width: 4px;
-    }
-    img {
-        display: block;
-        // width: 100%;
-        max-width: 480px;
-        margin: 1em auto;
-    }
-    & > figure.highlight {
-        box-shadow: 0 1px 2px rgba(0,0,0,0.125);
-    }
-    .tip {
-        position: relative;
-        margin: 2em 0;
-        padding: 12px 24px 12px 30px;
-        border-left: 4px solid #f66;
-        border-top-right-radius: 2px;
-        border-bottom-right-radius: 2px;
-        background-color: #f8f8f8;
-        br {
-            display: none;
-        }
-    }
-    .tip:before {
-        position: absolute;
-        top: 14px;
-        left: -12px;
-        content: "!";
-        width: 20px;
-        height: 20px;
-        border-radius: 100%;
-        color: #fff;
-        font-size: 14px;
-        line-height: 20px;
-        font-weight: bold;
-        text-align: center;
-        background-color: #f66;
-        font-family: $font-family;
-    }
+  h2, h3, h4, h5, h6 {
+      position: relative;
+      margin: 1em 0;
+      a:before {
+          content: "#";
+          color: #42b983;
+          position: absolute;
+          left: -0.7em;
+          top: -4px;
+          font-size: 1.2em;
+          font-weight: bold;
+      }
+  }
+  h4, h5, h6 {
+      a:before {
+          content: "";
+      }
+  }
+  h2, h3 {
+      font-size: 1.4em;
+  }
+  h4, h5, h6 {
+      font-size: 1.3em;
+  }
+  a {
+      color: #42b983;
+      word-break: break-all;
+  }
+  blockquote {
+      margin: 2em 0;
+      padding: 0.5em 1.3em;
+      border: 1px solid #eee;
+      border-radius: 3px;
+      border-left-color: #42b983;
+      border-left-width: 4px;
+  }
+  blockquote.warning {
+      border-left-color: #f0ad4e;
+      border-left-width: 4px;
+  }
+  img {
+      display: block;
+      // width: 100%;
+      max-width: 480px;
+      margin: 1em auto;
+  }
+  & > figure.highlight {
+      box-shadow: 0 1px 2px rgba(0,0,0,0.125);
+  }
+  .tip {
+      position: relative;
+      margin: 2em 0;
+      padding: 12px 24px 12px 30px;
+      border-left: 4px solid #f66;
+      border-top-right-radius: 2px;
+      border-bottom-right-radius: 2px;
+      background-color: #f8f8f8;
+      br {
+          display: none;
+      }
+  }
+  .tip:before {
+      position: absolute;
+      top: 14px;
+      left: -12px;
+      content: "!";
+      width: 20px;
+      height: 20px;
+      border-radius: 100%;
+      color: #fff;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: bold;
+      text-align: center;
+      background-color: #f66;
+      font-family: $font-family;
+  }
 }
 
 #mask {
-    position: fixed;
-    overflow: scroll;
-    width: 100%;
-    height: 100%;
-    padding: 1em 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 10;
-    #mask-image {
-        max-width: 95%;
-    }
+  position: fixed;
+  overflow: scroll;
+  width: 100%;
+  height: 100%;
+  padding: 1em 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  #mask-image {
+      max-width: 95%;
+  }
 }
 
 code,
 pre {
-    font-size: 0.8em;
-    background-color: #f8f8f8;
-    font-family: $code-font-family;
+  font-size: 0.8em;
+  background-color: #f8f8f8;
+  font-family: $code-font-family;
 }
 
 .highlight {
-    position: relative;
-    margin: 1em 0;
-    border-radius: 2px;
-    line-height: 1.1em;
-    background-color: #f8f8f8;
-    overflow-x: auto;
-    table, tr, td {
-        width: 100%;
-        border-collapse: collapse;
-        padding: 0;
-        margin: 0;
+  position: relative;
+  margin: 1em 0;
+  border-radius: 2px;
+  line-height: 1.1em;
+  background-color: #f8f8f8;
+  overflow-x: auto;
+  table, tr, td {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 0;
+    margin: 0;
+  }
+  .gutter {
+    display: none;
+  }
+  .code pre {
+    padding: 1.2em 1.4em;
+    line-height: 1.5em;
+    margin: 0;
+    .line {
+      width: auto;
+      height: 18px;
     }
-    .gutter {
-        display: none;
-    }
-    .code pre {
-        padding: 1.2em 1.4em;
-        line-height: 1.5em;
-        margin: 0;
-        .line {
-            width: auto;
-            height: 18px;
-        }
-    }
+  }
 }
 
 %code-base {
-    position: absolute;
-    top: 0;
-    right: 0;
-    color: #ccc;
-    text-align: right;
-    font-size: 0.75em;
-    padding: 5px 10px 0;
-    line-height: 15px;
-    height: 15px;
-    font-weight: 600;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #ccc;
+  text-align: right;
+  font-size: 0.75em;
+  padding: 5px 10px 0;
+  line-height: 15px;
+  height: 15px;
+  font-weight: 600;
 }
 
 @mixin code-signs($keys) {

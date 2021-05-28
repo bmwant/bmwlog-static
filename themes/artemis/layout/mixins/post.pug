@@ -16,16 +16,15 @@ mixin postTitle(title)
 mixin posts()
     ul.home.post-list
         - page.posts.each(function (item) {
-            li.post-list-item
-                article.post-block
-                    .post-title
-                        a.post-title-link(href=url_for(item.path))
-                            +postTitle(item.title)
-                    +postInfo(item)
-                    .post-content
-                        != item.excerpt
-                    //- a.read-more(href=url_for(item.path))
-                    //-     != __('read_more')
+            article.home-post-block
+                +postInfo(item)
+                .home-post-title
+                    a.post-title-link(href=url_for(item.path))
+                        +postTitle(item.title)
+                //- .post-content
+                //-     != item.excerpt
+                //- a.read-more(href=url_for(item.path))
+                //-     != __('read_more')
         - })
 
 //- Archive Page
