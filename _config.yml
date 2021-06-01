@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 url: https://bmwlog.pp.ua
-permalink: :post_title/
+permalink: :title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -37,7 +37,7 @@ external_link:
   enable: true # Open external links in new tab
   field: site # Apply to the whole site
   exclude: ''
-filename_case: 0
+filename_case: 1 # Transform to lowercase
 render_drafts: false
 post_asset_folder: false
 relative_link: false
