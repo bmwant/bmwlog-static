@@ -73,7 +73,7 @@ a.post-title-link {
   color: $color-dark-green;
   padding: 0 2px;
   transition: color ease 0.3s;
-  font-weight: 600;
+  // font-weight: 600;
   border-bottom: 2px dotted $color-green;
   transition: border-bottom-color .2s ease 0s;
 
@@ -125,29 +125,29 @@ table {
     padding: 6px 13px;
   }
   thead {
-      background-color: #fff;
+    background-color: #fff;
   }
-    tbody {
-        tr {
-            border-top: 1px solid #c6cbd1;
-            background-color: white;
-        }
-        tr:nth-child(2n) {
-            background-color: #f6f8fa;
-        }
-        td {
-            border: 1px solid #dfe2e5;
-            text-align: left;
-            margin: 0;
-            padding: 6px 13px;
-        }
-        th :first-child,
-        td :first-child {
-            margin-top: 0;
-        }
-        th :last-child,
-        td :last-child {
-            margin-bottom: 0;
-        }
+  tbody {
+    tr {
+      border-top: 1px solid #c6cbd1;
+      background-color: white;
     }
+    tr:nth-child(2n) {
+      background-color: #f6f8fa;
+    }
+    td {
+      border: 1px solid #dfe2e5;
+      text-align: left;
+      margin: 0;
+      padding: 6px 13px;
+    }
+    th :first-child,
+    td :first-child {
+      margin-top: 0;
+    }
+    th :last-child,
+    td :last-child {
+      margin-bottom: 0;
+    }
+  }
 }
