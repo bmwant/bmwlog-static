@@ -1,4 +1,6 @@
 ---
 title: {{ title }}
-tags:
+tags: []
+author: Misha Behersky
+language: en
 ---
