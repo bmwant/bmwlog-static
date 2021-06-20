@@ -1,5 +1,5 @@
 ---
-title: Зручна робота з віртуальний середовищем
+title: Зручна робота з віртуальним середовищем
 date: 2016-02-07 16:12:21
 tags: [python, virtualenv, venv, tools, bash]
 author: Misha Behersky
