@@ -34,8 +34,7 @@ location /websocket {
 $ pip install gevent-websocket
 ```
 
-В файлі налаштувань gunicorn додаємо рядок (повний файл налаштувань [в цій статті](https://bmwlog.pp.ua/deploji-bottle-veb-dodatka/))
-
+В файлі налаштувань gunicorn додаємо рядок (повний файл налаштувань {% post_link deploji-bottle-veb-dodatka 'в цій статті' %})
 
 ```python
 worker_class = 'geventwebsocket.gunicorn.workers.GeventWebSocketWorker'
