@@ -3,6 +3,7 @@ title: Custom Celery routing
 date: 2019-03-01 19:29:24
 tags: [celery, docker, python, redis, ci]
 author: Misha Behersky
+language: en
 ---
 
 <p>In this article I'm going to share an approach that we use to execute some long running background tasks for our project.</p>
@@ -48,7 +49,7 @@ def get_requirements_hash(requirements):
 
 def get_current_project_requirements():
     """
-    Returns all requirements for the project as a string each 
+    Returns all requirements for the project as a string each
     requirement per new line.
     """
     project_requirements = []
@@ -60,7 +61,7 @@ def get_current_project_requirements():
 
 def get_current_image_tag():
     """
-    Based on hash of all the requirements files return a tag 
+    Based on hash of all the requirements files return a tag
     for latest docker images.
     """
     all_reqs = get_current_project_requirements()
