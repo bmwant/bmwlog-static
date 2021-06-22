@@ -11,4 +11,4 @@ author: Misha Behersky
 
 <p>Також були доповіді про <a href="https://github.com/tvoinarovskyi/kafka-python" target="_blank">особливості написання kafka-python клієнта</a>, та <a href="https://www.slideshare.net/YaroslavMuravskiy/the-effective-use-of-django-orm" target="_blank">ефективне використання Django ORM</a>.</p>
 
-<p>Stay tuned!</p>
+Stay tuned!

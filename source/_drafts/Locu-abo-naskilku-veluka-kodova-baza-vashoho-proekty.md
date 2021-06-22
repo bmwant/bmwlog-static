@@ -32,8 +32,7 @@ author: Misha Behersky
 
 <p>Майже, <em>19К</em> рядків власного коду, не враховуючи коментарі. Досить непогано! В наступному пості про <em>KPIdata</em>, покажу який в нас code coverage, що буде не дуже вражаючим, але тим не менш, розгляну, які інструменти ми для цього використовуємо.</p>
 
-<h3>Ресурси</h3>
+### Ресурси
 
-<p><a href="http://kpidata.org" target="_blank">Сайт KPIdata</a></p>
-
-<p><a href="https://github.com/kpidata/" target="_blank">Наші&nbsp;репозиторії&nbsp;на github</a></p>
+* `http://kpidata.org` - Сайт KPIdata
+* [Наші репозиторії на github](https://github.com/kpidata/)

@@ -31,6 +31,6 @@ print(inspect.getfile(inspect.currentframe()))</code></pre>
 
 <p>Цей фрагмент коду <em>завжди</em> буде повертати ім&rsquo;я файлу&nbsp;модуля, з якого виконується код.</p>
 
-<h3>Ресурси</h3>
+### Ресурси
 
 <p><a href="https://pymotw.com/2/inspect/" target="_blank">Використання модуля inspect</a></p>
