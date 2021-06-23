@@ -3,7 +3,7 @@ import shutil
 
 
 def lowercase_filenames():
-    dir_path = 'source/_drafts'
+    dir_path = 'source/_posts'
     for filename in os.listdir(dir_path):
         old_filepath = os.path.join(dir_path, filename)
         new_filepath = f'{os.path.join(dir_path, filename.lower())}-1'
