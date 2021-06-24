@@ -3,6 +3,7 @@ title: Sending sms via Skype api
 date: 2016-12-08 19:02:18
 tags: [python, skype, api, fun]
 author: Misha Behersky
+language: en
 ---
 
 <p>Recently I faced a problem of sending sms to a number that was not completely known: I had three missing digits. Like you know somebody can leave his number in such way: <strong>+380986*581**</strong>. I found that Skype provides <a href="https://docs.botframework.com/en-us/skype/getting-started" target="_blank">developer tools for building a bot,</a> but failed to implement anything probably because it was too late at night. So results in google showed that there is another library that can attach to running process of skype - <a href="https://github.com/Skype4Py/Skype4Py" target="_blank">Skype4Py</a>. Simple script came up after couple of minutes</p>
@@ -25,7 +26,7 @@ def main():
         phone = number_template.format(i1, i2, i3)
         click.secho('Sending {} sms to {}...'.format(i, phone), fg='blue')
         text = 'Wanna say something {} time...'.format(i)
-        
+
         sms = skype.SendSms(phone, Body=text)
         time.sleep(0.5)
 
