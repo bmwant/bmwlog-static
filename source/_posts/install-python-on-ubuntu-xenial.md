@@ -5,7 +5,7 @@ tags: [python, python3, ubuntu, pip]
 author: Misha Behersky
 ---
 
-<p>By default Ubuntu is shipped with Python 3.5.2 or whatever but to use latest version (e.g. 3.6.4 as in example below) you need to install it manually. So we need to download dependencies, source code and the build it by yourself. You may execute commands from your home directory or from any other temporary directory (we need source code only once)</p>
+By default Ubuntu is shipped with Python 3.5.2 or whatever but to use latest version (e.g. 3.6.4 as in example below) you need to install it manually. So we need to download dependencies, source code and the build it by yourself. You may execute commands from your home directory or from any other temporary directory (we need source code only once)
 
 ```bash
 $ sudo apt install build-essential zlib1g-dev libreadline-dev libssl-dev openssl
@@ -26,13 +26,13 @@ $ pip3 --version
 $ python3.6
 ```
 
-<p>If you want to type <span class="inline-code">python3</span> in terminal and open a latest installation you may need to symlink your executable with the alias like this</p>
+If you want to type `python3` in terminal and open a latest installation you may need to symlink your executable with the alias like this
 
-<pre>
-<code class="language-bash">which python3  # output path 1
-which python3.6  # output path 2
+```bash
+$ which python3  # output path 1
+$ which python3.6  # output path 2
 # e.g. sudo ln -sf /usr/local/bin/python3.6 /usr/local/bin/python3
-sudo ln -sf  [output path 2] [output path 1]
-</code></pre>
+$ sudo ln -sf  [output path 2] [output path 1]
+```
 
-<p>Enjoy!</p>
+Enjoy!

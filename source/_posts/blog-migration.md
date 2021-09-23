@@ -2,6 +2,7 @@
 title: Blog migration
 author: Misha Behersky
 date: 2021-04-27 15:15:10
+language: en
 ---
 
 Recently I've decided to migrate my blog written with [Flask](https://flask.palletsprojects.com/en/latest/)/Python 3 to be a SPA using [Vue.js](https://vuejs.org/). Due to a lack of free time I don't see this migration to be finished in the nearest future.

@@ -1,6 +1,6 @@
 ---
 title: Use NFS for docker volumes on Mac
-tags: []
+tags: [osx, docker, mac, nfs]
 language: en
 author: Misha Behersky
 date: 2021-06-09 12:10:38

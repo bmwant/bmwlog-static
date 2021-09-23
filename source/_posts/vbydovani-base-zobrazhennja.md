@@ -16,19 +16,15 @@ language: ua
 
 ```python
 import base64
-
 from flask import Flask, render_template
 
-
 app = Flask(__name__, template_folder='.')
-
 
 @app.route('/')
 def hello():
     with open('image.png', 'rb') as f:
         encoded_image = base64.b64encode(f.read()).decode('utf-8')
     return render_template('template.html', image=encoded_image)
-
 
 if __name__ == '__main__':
     app.run()

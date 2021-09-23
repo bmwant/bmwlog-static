@@ -1,11 +1,10 @@
 ---
 title: Recursion in Python
-tags: []
 language: en
 author: Misha Behersky
 date: 2021-09-07 21:00:24
+tags: [python, algorithms, recursion, functional]
 ---
-
 
 ![y-combinator](/images/y_combinator.png)
 > **NOTE**: All the code below has been tested using Python **3.8.12** and some of the syntax might not be compatible with older versions.

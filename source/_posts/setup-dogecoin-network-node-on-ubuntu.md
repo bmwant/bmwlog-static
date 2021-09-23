@@ -7,8 +7,8 @@ tags:
   - ubuntu
 author: Misha Behersky
 date: 2021-05-15 15:45:12
+language: en
 ---
-
 
 ![doge pic](/images/dh7sjwznlgx61.jpg)
 
