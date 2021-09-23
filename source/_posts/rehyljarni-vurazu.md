@@ -140,7 +140,7 @@ def match(self):
 
 ### Ресурси
 
-* [Бібліотека для кольорового прінту в консолі](http://bmwlog.pp.ua/post/106)
+* {% post_link kolorovuji-tekst-v-konsoli 'Бібліотека для кольорового прінту в консолі' %}
 * [Погратися з регулярними виразами онлайн](http://regexr.com)
 * [Де малювати такі недолугі картинки](http://sketchtoy.com)
 * [Код на Гітхабі](https://gist.github.com/bmwant/f9c3dbd5d2c69dd1f7cc7f1551a5ff4b)

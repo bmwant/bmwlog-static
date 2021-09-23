@@ -39,3 +39,17 @@ or simply
 $ hexo deploy
 $ hexo deploy -g  # to generate site before deployment
 ```
+
+### Post writing hints
+
+* Cross-link
+
+```markdown
+{% post_link other-post-slug 'Link title' %}
+```
+
+* Insert image
+
+```markdown
+![alt text](/images/picture.png)
+```

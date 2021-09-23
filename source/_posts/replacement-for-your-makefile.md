@@ -37,9 +37,9 @@ What will you have out of the box:
 
 The tool is python 3 compatible and has no other dependencies. It's definitely worth it to try this tool.
 
-### Slides
+### My slides from PyCon Poland 2016 Lightning talk
 
-[My slides from PyCon Poland 2016 Lightning talk](https://www.slideshare.net/MishaBehersky/pyinvoke-you-replacement-for-makefiles)
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/3JUtakXCYqnKwc" width="510" height="420" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen></iframe>
 
 ### Resources
 
