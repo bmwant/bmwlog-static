@@ -73,4 +73,4 @@ That's it, now you are able to enhance it with any custom features you want. Hap
 ### Resources
 * [Complete project on the Github](https://github.com/bmwant/tabtab)
 * [Related StackOverflow question](https://stackoverflow.com/questions/48432287/how-to-get-telegrams-channel-description-in-telethon)
-* [Use Poetry in your project](https://bmwlog.pp.ua/post/using-poetry-in-production)
+* {% post_link using-poetry-in-production 'Use Poetry in your project' %}

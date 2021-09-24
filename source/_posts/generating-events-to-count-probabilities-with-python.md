@@ -6,7 +6,7 @@ author: Misha Behersky
 language: en
 ---
 
-In the [previous article](https://bmwlog.pp.ua/count-your-probabilities-using-python) we have talked about confirming solution for simple probabilistic problems. What if we have slightly complex environment and we cannot calculate all the possible outcomes? We can still make a bunch of experiments and by the [law of large numbers](https://en.wikipedia.org/wiki/Law_of_large_numbers) the average of the results will be close to expected value. As usually Python will help us generate vast amount of possible events and we will compare that result to our initial guess. Let's try to solve some examples using this approach!
+In the {% post_link count-your-probabilities-using-python 'previous article' %} we have talked about confirming solution for simple probabilistic problems. What if we have slightly complex environment and we cannot calculate all the possible outcomes? We can still make a bunch of experiments and by the [law of large numbers](https://en.wikipedia.org/wiki/Law_of_large_numbers) the average of the results will be close to expected value. As usually Python will help us generate vast amount of possible events and we will compare that result to our initial guess. Let's try to solve some examples using this approach!
 
 ### Example 1
 A baseball team wins each game with probability *40%* and the games are all independent. What is the probability that they get their first win of the season in their fifth game?

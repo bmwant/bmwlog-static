@@ -155,4 +155,4 @@ I hope with such variety of methods everybody will be able to find approach to f
 * [PyAutoGUI documentation](https://pyautogui.readthedocs.io/en/latest/)
 * [Related StackOverflow question](https://stackoverflow.com/questions/10705712/screenshot-of-a-window-using-python/60020534)
 * [Installing opencv on different platforms](https://www.pyimagesearch.com/2018/09/19/pip-install-opencv/)
-* [How to use pyenv](https://bmwlog.pp.ua/post/using-pyenv-on-ubuntu)
+* {% post_link using-pyenv-on-ubuntu 'How to use pyenv' %}

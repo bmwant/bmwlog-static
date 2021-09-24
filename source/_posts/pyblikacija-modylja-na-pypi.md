@@ -19,7 +19,7 @@ setup(name='MyModule',
       py_modules=['mymodule'],
       author='Most Wanted',
       author_email='bmwant@gmail.com',
-      url='http://bmwlog.pp.ua',
+      url='https://bmwlog.pp.ua',
       description='Short module description',
       classifiers=[
           'Development Status :: 2 - Pre-Alpha',
@@ -49,7 +49,7 @@ $ python setup.py sdist
 $ python setup.py sdist upload
 ```
 
-Потрібно буде ввести логін і пароль вашого зареєстрованого акаунта (вам запропонують зберегти ці параметри у файлі <em>.pypirc</em>, щоб не вводити їх кожного разу) - і все: ваш модуль тепер доступний всім.
+Потрібно буде ввести логін і пароль вашого зареєстрованого акаунта (вам запропонують зберегти ці параметри у файлі `.pypirc`, щоб не вводити їх кожного разу) - і все: ваш модуль тепер доступний всім.
 
 ```bash
 $ pip install mymodule

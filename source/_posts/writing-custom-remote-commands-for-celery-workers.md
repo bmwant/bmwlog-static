@@ -81,5 +81,5 @@ That's it for today, have a great weekend and see you soon.
 
 ### Resources
 * [Official docs on writing custom commands](http://docs.celeryproject.org/en/latest/userguide/workers.html#writing-your-own-remote-control-commands)
-* [Monitoring Celery queue with Datadog](https://bmwlog.pp.ua/monitoring-celery-queue-with-datadog)
-* [Writing custom routing for Celery](https://bmwlog.pp.ua/custom-celery-routing)
+* {% post_link monitoring-celery-queue-with-datadog 'Monitoring Celery queue with Datadog' %}
+* {% post_link custom-celery-routing 'Writing custom routing for Celery' %}

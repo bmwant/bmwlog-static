@@ -11,7 +11,7 @@ We will be using cookiecutter package to quickly spin up a simple web applicatio
 
 ### Prerequisites
 If you do not have those yet make sure all of the dependencies are installed first
-* [Python 3](http://bmwlog.pp.ua/post/123)
+* {% post_link install-python-on-ubuntu-xenial 'Python 3' %}
 * [pipenv](https://pipenv.readthedocs.io/en/latest/)
 
 ```bash

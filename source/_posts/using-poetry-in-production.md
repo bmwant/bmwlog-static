@@ -42,7 +42,7 @@ Once you have Poetry installed you can run any regular command you want with `po
 $ poetry run pytest -sv tests/
 ```
 
-In case you do not want to type two extra words you can just execute `poetry shell` which is the equivalent of activating virtual environment within current shell. Note that Poetry is able not only to install dependencies into your virtual environment but also to create a new one automatically. It nicely works with [pyenv](https://github.com/pyenv/pyenv) and allows you to create virtual environment with any specific Python version. You can [read more about pyenv here](https://bmwlog.pp.ua/post/using-pyenv-on-ubuntu) but basically it looks like this
+In case you do not want to type two extra words you can just execute `poetry shell` which is the equivalent of activating virtual environment within current shell. Note that Poetry is able not only to install dependencies into your virtual environment but also to create a new one automatically. It nicely works with [pyenv](https://github.com/pyenv/pyenv) and allows you to create virtual environment with any specific Python version. You can {% post_link using-pyenv-on-ubuntu 'read more about pyenv here' %} but basically it looks like this
 
 ```bash
 $ pyenv local 3.6.8
