@@ -29,7 +29,9 @@ app.use('/healthcheck', require('express-healthcheck')({
 After configuring your side just connect some third party service from the [list of available](https://www.hongkiat.com/blog/monitor-website-up-downtime-30-free-web-services-and-tools/) and you are good to go.
 
 But we will focus on the second approach as it's the one that healthchecks.io implements. Add your first healthcheck in UI
+
 ![add healtcheck](/old/article/199370e0dbe732b3a3bee487c5049077.png)
+
 and then add this code inserting url that was generated on previous step
 
 ```javascript
@@ -44,7 +46,9 @@ setInterval(sendHealthcheck, 10 * 60 * 1000); // every ten minutes
 ```
 
 Next thing you need is to configure your intervals. **Period** is expected time between pings and **grace time** is a delay before alert is sent in case ping was not received.
+
 ![set timers](/old/article/52e3652a57a63bb6bad100f54f93c99f.png)
+
 It's really simple and the only thing left is to configure preferred way to receive your alerts. There are a lot of available integrations such as [Slack](https://slack.com), [Telegram](https://telegram.org/), [Pushover](https://pushover.net/), [Pushbullet](https://www.pushbullet.com/) and others. By default it will send notifications to your email and in some cases that might be enough.
 
 Using this service will help you monitor availability of your web sites and quickly repair them before users will get frustrated. Ten minutes of your time now may save you from headache in future.
