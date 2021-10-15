@@ -58,7 +58,6 @@ pkg_add -r nginx</code></pre>
 <p>
  Фіксимо командою
 </p>
-<pre>
-<code class="language-bash">ln -s /usr/local/etc/ssl/cert.pem /etc/ssl/cert.pem </code></pre>
-<p>
-</p>
+```bash
+$ ln -s /usr/local/etc/ssl/cert.pem /etc/ssl/cert.pem
+```

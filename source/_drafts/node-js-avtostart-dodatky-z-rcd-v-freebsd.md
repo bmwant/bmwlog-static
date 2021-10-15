@@ -3,25 +3,27 @@ title: node js автостарт додатку з rc.d в FreeBSD
 date: 2018-06-07 09:55:16
 tags: [freebsd, nodejs, foreverjs, rcd]
 author: Misha Behersky
+language: ua
 ---
 
-<p>Нещодавно виникла необхідність запустити веб-додаток на <a href="http://expressjs.com" target="_blank">Express</a> (node js) автоматично при старті та перезапуску системи (FreeBSD 10.3). До цього все запускалося за допомогою чудового менеджера процесів для ноди - <a href="https://github.com/foreverjs/forever" target="_blank">foreverjs</a>. Він чудово працює з дочірніми процесами і виконує свої функції (старт, перезапуск, перегляд логів, рестарт при зміні коду), але не запускається автоматично з операційною системою. Рішенням став демон системи, що виконує скрипти автозапуску під час старту - <a href="https://www.freebsd.org/doc/en_US.ISO8859-1/articles/rc-scripting/" target="_blank">rc.d</a>.</p>
+Нещодавно виникла необхідність запустити веб-додаток на [Express](http://expressjs.com) (node js) автоматично при старті та перезапуску системи (FreeBSD 10.3). До цього все запускалося за допомогою чудового менеджера процесів для ноди - [foreverjs](https://github.com/foreverjs/forever). Він чудово працює з дочірніми процесами і виконує свої функції (старт, перезапуск, перегляд логів, рестарт при зміні коду), але не запускається автоматично з операційною системою. Рішенням став демон системи, що виконує скрипти автозапуску під час старту - [rc.d](https://www.freebsd.org/doc/en_US.ISO8859-1/articles/rc-scripting/).
 
-<p>Проста конфігурація додатку для forever</p>
+Проста конфігурація додатку для forever
 
-<pre>
-<code class="language-json">{
-    "uid": "myapp",
-    "append": true,
-    "watch": true,
-    "script": "app.js",
-    "sourceDir": "/home/user/myapp"
-}</code></pre>
+```json
+{
+  "uid": "myapp",
+  "append": true,
+  "watch": true,
+  "script": "app.js",
+  "sourceDir": "/home/user/myapp"
+}
+```
 
-<p>І rc-скрипт який буде відповідати за запуск</p>
+І rc-скрипт який буде відповідати за запуск
 
-<pre>
-<code class="language-bash">#!/bin/sh
+```bash
+#!/bin/sh
 
 # $FreeBSD$
 #
@@ -64,27 +66,27 @@ restart()
   su - user -c "${forever} restart myapp"
 }
 
-run_rc_command "$1"</code></pre>
+run_rc_command "$1"
+```
 
-<p>Два важливих момента: </p>
+Два важливих моменти:
 
-<ol>
-	<li>За допомогою цього скрипта можна виконувати запуск від будь-якого користувача, не лише root-а. Для цього в функціях start/stop/restart перед командою додатково є префікс <span class="inline-code">su - user -c</span>.</li>
-	<li>Щоб передати змінні оточення - задаємо їх перед командою. Наприклад, перевизначаю порт для запуску <span class="inline-code">PORT=3344</span></li>
-</ol>
+* За допомогою цього скрипта можна виконувати запуск від будь-якого користувача, не лише root-а. Для цього в функціях start/stop/restart перед командою додатково є префікс `su - user -c`.
+* Щоб передати змінні оточення - задаємо їх перед командою. Наприклад, перевизначаю порт для запуску `PORT=3344`
 
-<p>Все інше залишаємо без змін, замінюючи назву додатку та шлях до робочої директорії. Копіюємо цей файл в <span class="inline-code">/usr/local/etc/rc.d</span> і не забуваємо додавати права на виконання файлу.</p>
+Все інше залишаємо без змін, замінюючи назву додатку та шлях до робочої директорії. Копіюємо цей файл в `/usr/local/etc/rc.d` і не забуваємо додавати права на виконання файлу.
 
-<pre>
-<code class="language-bash">sudo chmod +x /usr/local/etc/rc.d/myapp</code></pre>
+```bash
+$ sudo chmod +x /usr/local/etc/rc.d/myapp
+```
 
-<p>Тепер можна користуватися всіма плюшками сервісу </p>
+Тепер можна користуватися всіма плюшками сервісу
 
-<pre>
-<code class="language-bash">sudo service myapp restart</code></pre>
+```bash
+$ sudo service myapp restart
+```
 
-<h3>Ресурси</h3>
+### Ресурси
 
-<p><a href="https://bieker.ninja/2014/04/23/nodejs-startup-script-for-freebsd.html" target="_blank">NodeJs Startup Script for FreeBSD</a></p>
-
-<p><a href="https://habrahabr.ru/post/137857/" target="_blank">Схожа стаття на Хабрі</a></p>
+* [NodeJs Startup Script for FreeBSD](https://bieker.ninja/2014/04/23/nodejs-startup-script-for-freebsd.html)
+* [Схожа стаття на Хабрі](https://habrahabr.ru/post/137857/)
