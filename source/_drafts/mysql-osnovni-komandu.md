@@ -1,11 +1,12 @@
 ---
 title: MySQL. Основні команди
 date: 2015-02-10 21:41:24
-tags: [mysql, db]
+tags: [mysql, db, cheatsheet]
 author: Misha Behersky
+language: ua
 ---
 
-<h3>Створюємо базу даних та користувача для неї</h3>
+### Створюємо базу даних та користувача для неї
 
 <p>Виконуємо вхід та створюємо базу даних</p>
 
@@ -33,12 +34,12 @@ quit;</code></pre>
 
 <p>Вводимо пароль і працюємо з нашою базою даних.</p>
 
-<h3>Перезапустити MySQL-сервер на FreeBSD</h3>
+### Перезапустити MySQL-сервер на FreeBSD
 
 <pre>
 <code class="language-bash">service mysql-server restart</code></pre>
 
-<h3>Дозволити доступ до бази даних з віддалених хостів</h3>
+### Дозволити доступ до бази даних з віддалених хостів
 
 <pre>
 <code class="language-sql">USE mysql;
@@ -49,9 +50,7 @@ FLUSH PRIVILEGES;
 
 <p>Замість хоста можна вказати хост або символи підстановки (<strong>% </strong>для всіх). Також можна дозволити доступ одразу при створенні користувача:&nbsp;<strong>CREATE USER &#39;newuser&#39;@&#39;%&#39;</strong></p>
 
-<h3>Вивести список всіх баз даних</h3>
+### Вивести список всіх баз даних
 
 <pre>
 <code class="language-sql">SHOW databases;</code></pre>
-
-<p>&nbsp;</p>
