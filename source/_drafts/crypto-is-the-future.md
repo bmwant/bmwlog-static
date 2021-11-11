@@ -1,7 +1,7 @@
 ---
 title: Crypto is the future
 date: 2021-04-28 12:48:27
-tags: [crypto, bitcoin]
+tags: [crypto, bitcoin, dogecoin]
 author: Misha Behersky
 ---
 
@@ -11,7 +11,7 @@ author: Misha Behersky
 
 ![money evolution](/images/photo_2021-04-30_12-51-27.png)
 
-In this article I want to address some misconceptions about crypto currencies and highlight main points why I believe it will inevitably become a part of our lives and eventually replace existing financial institutions. I don't think that Bitcoin or any other cryptocurrency is perfect, but it's still on early stage of developing and adopting, so most of the flaws will vanish in the nearest future. Therefore let me show you couple of the current cases against and provide arguments to support the world of crypto. Below you will find a list of statements and opposing facts which should provide context for better understanding of how thing actually work.
+In this article I want to address some misconceptions about crypto currencies and highlight main points why I believe it will inevitably become a part of our lives and eventually replace existing financial institutions. I don't think that Bitcoin or any other cryptocurrency is perfect, but it's still on early stage of developing and adopting, so most of the flaws will vanish in the nearest future. Therefore let me show you couple of the current cases against and provide arguments to support the world of crypto. Below you will find a list of statements and opposing facts which should provide context for better understanding of how things actually work.
 
 ### It's just a waste of electricity
 
@@ -34,7 +34,7 @@ Another section goes here
 
 ~~ CI abuse here ~~
 
-Any precedent like this one drives forward a development of better protection It reminds me of an [Arms race](https://en.wikipedia.org/wiki/Arms_race) which isn't necessary a good thing, but it allows technologies to develop faster and eventually to be applied for peacful purposes.
+Any precedent like this one drives forward a development of better protection methods and enchances security altogether. It reminds me of an [Arms race](https://en.wikipedia.org/wiki/Arms_race) which isn't necessary a good thing, but it allows technologies to develop faster and eventually to be applied for peacful purposes.
 
 ### It has no real value
 
@@ -48,11 +48,11 @@ Do not confuse [pyramids](https://www.investopedia.com/terms/p/pyramidscheme.asp
 
 ![where lamba](/images/photo_2021-04-30_13-21-27.jpg)
 
-Nobody forces you to buy crypto as well as nobody forces you to [panic selling](https://en.wikipedia.org/wiki/Panic_selling) it giving profits to others. On the other hand every employee does his job to make money and that's totally normal. It's human nature to fight for the resources and accumulate them over time. As most developed species we tend to move from wars and violence and establish fairer rules for the society, so everyone comes up with different methods to upbuild his wealth. Furthermore, you don't criticize people for selling something they own to others and it doesn't matter whether it's something on [Etsy](https://www.etsy.com/) / [ebay](https://www.ebay.com/) or crypto on the exchange.
+Nobody forces you to buy crypto as well as nobody forces you to [panic sell](https://en.wikipedia.org/wiki/Panic_selling) it giving profits to others. On the other hand every employee does his job to make money and that's totally normal. It's human nature to fight for the resources and accumulate them over time. As most developed species we tend to move from wars and violence and establish fairer rules for the society, so everyone comes up with different methods to upbuild his wealth. Furthermore, you don't criticize people for selling something they own to others and it doesn't matter whether it's something on [Etsy](https://www.etsy.com/) / [ebay](https://www.ebay.com/) or crypto on the exchange.
 
-Like in every domain where you do investments you should do your own research ([DYOR](https://academy.binance.com/en/glossary/do-your-own-research)) before throwing money into something. Most of the videos on youtube or articles on the web I've came across also emphasize on `not a financial advice` narrative, so the final decision is always up to you. When you see something involving high risks you have to understand that you invest only as much as you afford to lose.
+Like in every domain where you do investments you should do your own research ([DYOR](https://academy.binance.com/en/glossary/do-your-own-research)) before throwing money into something. Most of the videos on youtube or articles on the web I've came across also emphasize on `not a financial advice` narrative, so the final decision is always up to you. When you see something involving high risks you have to understand that you should invest only as much as you afford to lose.
 
-Casinos and lottery? not just a gamling for [addicted](https://en.wikipedia.org/wiki/Problem_gambling).
+Casinos and lottery? not just a gambling for [addicted](https://en.wikipedia.org/wiki/Problem_gambling).
 
 
 ### It drastically affects global warming
@@ -63,21 +63,19 @@ Casinos and lottery? not just a gamling for [addicted](https://en.wikipedia.org/
 ### Future is bright
 
 If you made it through the sections above you should be ready to check positive sides of using cryptocurrencies/blockchains as well.
-First of all it's all about decentralization. No one controls or limits your ability to transfer money to another recepient. There is no third-party intermediary such as a bank which sets its own fees and proceeds each transaction. You are not limited to the amount or working hours as well as it cannot be cancelled by a regulator therefore restricting your intentions. ~~~
+First of all it's all about decentralization. No one controls or limits your ability to transfer money to another recepient. There is no third-party intermediary such as a bank which sets its own fees and proceeds each transaction. You are not limited to the amount or working hours as well as it cannot be cancelled by a regulator therefore restricting your intentions.
 
-
+Tremendous amount of work is being done to improve various aspects of our lives by:
 * providing financial systems for the countries with undeveloped banking systems ([read more](https://emurgo.io/ja/blog/cardano-strategy-africa))
 * enhancing privacy and anonymity for transactions ([read more](https://www.getmonero.org/get-started/faq/#anchor-different))
 * controling supply chains and ensuring product quality ([read more](https://iohk.io/en/enterprise/#traceabilty))
 * verifying digital scarcity with a proven authenticity for collectibles ([read more](https://medium.com/ecomi/the-benefit-of-blockchain-for-digital-collectibles-a3062fc44d70))
 * creating competitive solutions for existing projects with extra benefits (one example of it can be [digital advertising platform](https://basicattentiontoken.org/) allowing advertisers know their ads’ effectiveness without violating privacy)
-
-...and a lot more. Only [Cardano](https://cardano.org/enterprise/) blockchain by itself comes up with variety of solutions across multiple industry verticals. IOHK ~money research~ JUst testing an update form CI and works on fundamenatal cryptography problems such as [quantum resistance](https://iohk.io/en/blog/posts/2018/02/01/research-program-to-work-on-hardening-cardano-against-quantum-computers/).
-
+... to name a few. Only [Cardano](https://cardano.org/enterprise/) blockchain by itself comes up with variety of solutions across multiple industry verticals. [IOHK foundation](https://iohk.io/) has put a lot of efforts into money/financial systems research and at the same time they work on fundamental cryptography problems such as [quantum resistance](https://iohk.io/en/blog/posts/2018/02/01/research-program-to-work-on-hardening-cardano-against-quantum-computers/).
 
 ### Conclusion
 
-With this article I wanted to educate people with a little knowledge on the crypto internals and show that downsides is only due to people trying to abuse the system. In every domain you will be able to find aspects which can be exploited and eventually a person who will try to take advantage of that. ~~~
+With this article I wanted to educate people with a little knowledge on the crypto internals and show that downsides are only due to people trying to abuse the system. In every domain you will be able to find aspects which can be exploited and eventually a person who will try to take advantage of that. Anyway, positive impact is inevitable and possible advantages are limitless as the core idea of cryptocurrencies is ingenuous by design. History shows that such kind of improvements are always adopted due to basic evolution principles and time will tell for sure.
 Just remember that progress and true innovations always win in the end.
 
 🐕 🚀 🌕
