@@ -1,11 +1,10 @@
 ---
 title: TicTacToe game in Python
-tags: []
+tags: [python, gamedev, tutorial]
 language: en
 author: Misha Behersky
 date: 2021-11-18 17:36:40
 ---
-
 
 ### Intro
 
@@ -30,7 +29,7 @@ This article assumes you have an understanding of [lists](https://docs.python.or
 
 The [rules of the game](https://en.wikipedia.org/wiki/Tic-tac-toe) are pretty simple: two players *Xs* and *Os* are placing their marks on a 3 by 3 grid. In order to win the game, a player must fill a horizontal, vertical, or diagonal row with his symbol. In case no one succeeds to make a row of three a game is declared a draw. On the video you've seen first player managed to have three Xs on the diagonal and thus win the game.
 
-<video loop autoplay>
+<video controls loop autoplay>
   <source src="/images/tictactoe_play.webm" type="video/webm">
   Sorry, your browser doesn't support embedded videos.
 </video>
