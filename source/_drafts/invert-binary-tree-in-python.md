@@ -55,6 +55,7 @@ def generate_tree(levels: int) -> Optional[Node]:
 
 ### Resources
 
+* [Article on educative.io](https://www.educative.io/edpresso/how-to-invert-a-binary-tree)
 * [Recursive solution souce code](https://github.com/bmwant/jaaam/blob/main/invert_binary_tree.py)
 * [Non-recursive solution souce code](https://github.com/bmwant/jaaam/blob/main/invert_binary_tree_queue.py)
 * [Stack-based solution source code](https://github.com/bmwant/jaaam/blob/main/invert_binary_tree_stack.py)
