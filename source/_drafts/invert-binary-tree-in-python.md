@@ -35,6 +35,7 @@ class Node(object):
         return self.__str__()
 ```
 
+Having this class define we can go ahead and compose some simple tree by creating couple of linked nodes.
 
 ```python
 left_leaf = Node(23)
@@ -66,7 +67,7 @@ def generate_tree(levels: int) -> Optional[Node]:
     return node
 ```
 
-We already leverage recursion to generate left and right *subtrees* until we reach leaf nodes therefore returning `None` for their children. To check whether generation was any good we need to add `print_tree` function which is going to output its target to the console.
+We leverage recursion to generate left and right *subtrees* until we reach leaf nodes therefore returning `None` for their children. To check whether generation was any good we need to add `print_tree` function which is going to output its target to the console.
 
 ```python
 def print_tree(node: Node, level: int = 0):
@@ -78,9 +79,9 @@ def print_tree(node: Node, level: int = 0):
     print_tree(node.left, level+1)
 ```
 
-Again, idea is to use recursion for traversing left and right subtree and putting each node's value to the terminal in between. `level` parameter allows to add an extra indentation, so it's visually clear on which level the node resides. Finally, we have a tree representation which looks like tree laying on its side (rotated counter-clockwise)
+Again, idea is to use recursion for traversing left and right subtrees and putting each node's value to the terminal in between. `level` parameter allows to add an extra indentation, so it's visually clear on which level the node resides. Finally, we have a tree representation which looks like tree laying on its side (rotated counter-clockwise)
 
-![printed tree](/images/print_tree.png)
+![print tree](/images/print_tree.png)
 
 
 ```python
@@ -92,8 +93,41 @@ Use lines above if you want to produce same output as on the screenshot.
 
 ### Recursive solution
 
+It's no surprise that for inverting our tree we are going to use recursion again. This simple and straightforward solution requires even less code than generation itself.
+
+```python
+def invert_tree(node: Node) -> Node:
+    if node is None:
+        return
+
+    left_inverted = invert_tree(node.left)
+    right_inverted = invert_tree(node.right)
+    node.right = left_inverted
+    node.left = right_inverted
+    return node
+```
+
+The algorithm is the following: strarting from the root we invoke this function for the left and right subtrees and then swap them with each other. Therefore we end up having symmetrical tree from the same root node.
+
+```python
+tree = generate_tree(3)
+print('Initial tree')
+print_tree(tree)
+inverted = invert_tree(tree)
+print('-'*5)
+print_tree(inverted)
+print('Inverted tree')
+```
+
+![inverted tree](/images/inverted_tree.png)
+
+As you can see the resulting tree is symmetrical along the horizontal axis, so when folded on the dashed line corresponding nodes will match.
+
+That's basically it for the inversion itself. Clearly, there are more of extra code to help us represent and visualize the solution than within the solution itself. It gets tricky though when we want to accomplish the same without any recursion. Let's move on to see how the same can be done using [queue](https://en.wikipedia.org/wiki/Queue_(abstract_data_type)).
 
 ### Non-recursive solution
+
+> **NOTE:** There is also a slightly simpler solution using [stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)) data structure. We are not going to implement it within the article as internally recursive solution works by storing all the function invocations on the stack. Basically that solution is equivalent of maintaining own [call stack](https://en.wikipedia.org/wiki/Call_stack) and essentially follows the same exact principle. Anyway, you can find source code for the stack-based solution within resources section in the end of the article.
 
 ### Resources
 
