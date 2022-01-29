@@ -47,6 +47,8 @@ tree = root  # this is our simple tree consisting of three nodes total
 
 Storing one variable (root node) is enough to represent a whole tree as the rest of nodes are linked together using pointers.
 
+Creating a tree manually is a hassle, so we need a function that generates arbitrary tree for us. We will provide number of levels as an argument and it will return a root node for the tree requested. Each node stores sequentually incremented value for better visual grasp, but you can also fill the tree with some random numbers.
+
 ```python
 from typing import Optional
 
@@ -63,6 +65,30 @@ def generate_tree(levels: int) -> Optional[Node]:
     node.right = generate_tree(levels-1)
     return node
 ```
+
+We already leverage recursion to generate left and right *subtrees* until we reach leaf nodes therefore returning `None` for their children. To check whether generation was any good we need to add `print_tree` function which is going to output its target to the console.
+
+```python
+def print_tree(node: Node, level: int = 0):
+    if node is None:
+        return
+    print_tree(node.right, level+1)
+    print('  ' * level, end='')
+    print(node)
+    print_tree(node.left, level+1)
+```
+
+Again, idea is to use recursion for traversing left and right subtree and putting each node's value to the terminal in between. `level` parameter allows to add an extra indentation, so it's visually clear on which level the node resides. Finally, we have a tree representation which looks like tree laying on its side (rotated counter-clockwise)
+
+![printed tree](/images/print_tree.png)
+
+
+```python
+tree = generate_tree(3)
+print_tree(tree)
+```
+
+Use lines above if you want to produce same output as on the screenshot.
 
 ### Recursive solution
 

@@ -1,5 +1,6 @@
 ---
 title: Getting started with Idris 2
+date: 2022-01-04 09:42:23
 tags: [idris, fp, dependent, types, macos]
 author: Misha Behersky
 language: en
