@@ -3,6 +3,7 @@ title: Invert binary tree in Python
 tags: [python, algorithms, snippets]
 author: Misha Behersky
 language: en
+date: 2022-02-06 21:51:10
 ---
 
 ![binary tree](/images/invert_binary_tree.png)
