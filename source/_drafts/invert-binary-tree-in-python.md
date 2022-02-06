@@ -35,7 +35,7 @@ class Node(object):
         return self.__str__()
 ```
 
-Having this class define we can go ahead and compose some simple tree by creating couple of linked nodes.
+Having this class defined we can go ahead and compose some simple tree by creating couple of linked nodes.
 
 ```python
 left_leaf = Node(23)
@@ -102,6 +102,7 @@ def invert_tree(node: Node) -> Node:
 
     left_inverted = invert_tree(node.left)
     right_inverted = invert_tree(node.right)
+    # Switch places for left and right
     node.right = left_inverted
     node.left = right_inverted
     return node
@@ -127,7 +128,93 @@ That's basically it for the inversion itself. Clearly, there are more of extra c
 
 ### Non-recursive solution
 
-> **NOTE:** There is also a slightly simpler solution using [stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)) data structure. We are not going to implement it within the article as internally recursive solution works by storing all the function invocations on the stack. Basically that solution is equivalent of maintaining own [call stack](https://en.wikipedia.org/wiki/Call_stack) and essentially follows the same exact principle. Anyway, you can find source code for the stack-based solution within resources section in the end of the article.
+> **NOTE:** There is also a slightly simpler solution using [stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)) data structure. We are not going to implement it within the article as internally recursive solution works by storing all the function invocations on the stack. Basically that solution is equivalent of maintaining own [call stack](https://en.wikipedia.org/wiki/Call_stack) and essentially follows the exact same principle. Anyway, you can find source code for the stack-based solution within resources section in the end of the article.
+
+The algorithm consists of two main steps: on the first stage we use [breadth first search](https://en.wikipedia.org/wiki/Breadth-first_search) to traverse the tree and on the way we add leaf nodes to the intermediate list; on the second stage we restore *tree-like* structure from list elements rearraged in the desired order. Let's look at each stage in more detail.
+
+**First stage**
+
+This is a simple implementation of a [BFS](https://www.educative.io/edpresso/how-to-implement-a-breadth-first-search-in-python) that converts our input tree to the linear array of nodes.
+
+```python
+def flatten_tree(node: Node) -> List[Node]:
+    flatten = []
+    queue = [node]
+    while queue:
+        node = queue.pop()
+        if node:
+            flatten.append(node)
+            # Add order doesn't matter, but
+            # it needs to be inverted on the second stage
+            queue.insert(0, node.right)
+            queue.insert(0, node.left)
+    return flatten
+```
+
+The output of the function is a list containing all the elements in a specific order. This allows us to rebuild a tree attaching leaf nodes differently thus achieving requested order.
+
+**Second stage**
+
+To understand better what this step does consider we are working with `[1, 5, 2, 7, 6, 4, 3]` list as an input. You can obtain this exact order by going over our example tree from left to right *column by column*. Then based on the current position (`counter`) we look ahead and mount leaf nodes back to the current node in the queue. `flatten`/`expand` stages complement each other, so we should re-mount in the order opposite to the previous step. As a result *left* and *right* leaves for the each node got swapped.
+
+```python
+def expand_into_tree(elems: List[Node]) -> Node:
+    queue = []
+    counter = 0
+    root = Node(elems[counter])
+    queue.append(root)
+    while queue:
+        node = queue.pop()
+        # Note the inversed order here
+        if left := _get(elems, counter+1):
+            node.left = left
+            queue.insert(0, left)
+            counter += 1
+
+        if right := _get(elems, counter+1):
+            node.right = right
+            queue.insert(0, right)
+            counter += 1
+
+    return root
+```
+
+There is also a helper `_get` function simply to make *getitem* operation safe for our code. It makes sure no `IndexError` occurs when we reach the end of our list and there is no more nodes to attach.
+
+```python
+from typing import List, Optional, TypeVar
+
+T = TypeVar('T')
+
+def _get(array: List[T], index: int) -> Optional[T]:
+    try:
+        return array[index]
+    except IndexError:
+        pass
+```
+
+Code is a simple wrapper with `try`/`catch` block returning `None` when the index is out of bounds.
+
+That's everything we need to invert our tree non-recursively:
+
+```python
+def invert_tree_queue(root: Node) -> Node:
+    linear_elems = flatten_tree(root)
+    return expand_into_tree(linear_elems)
+```
+
+Finally, confirm the solution works properly and matches previous results:
+
+```python
+tree = generate_tree(3)
+inverted = invert_tree_queue(tree)
+print_tree(inverted)
+```
+
+> **NOTE**: Solution above works only with balanced trees where each non-leaf node has two children. This restriction comes up from the relying on the explicit order or the elements in the flattened tree. As an excersise you can modify the code to make it more general.
+
+### Final words
+
 
 ### Resources
 
