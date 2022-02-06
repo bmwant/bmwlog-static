@@ -215,6 +215,7 @@ print_tree(inverted)
 
 ### Final words
 
+I don't necessarily think that knowing all the algorithms and ability to write them on the whiteboard is a required thing for the programmer to have. As long as your code does something useful or cover some business need your are valuable for the field. Nowadays, especially with tools like [GitHub Copilot](https://copilot.github.com/) and [DeepMind AlphaCode](https://alphacode.deepmind.com/) you can write sophisticated code only by providing description of the feature required. Nevertheless, understanding main ideas and underlying concepts would hugely help you during development/debugging process. You don't have to implement everything yourself or follow instructions step-by-step, but at least try to keep these articles as a side-reading. Stay curious, see ya.
 
 ### Resources
 
