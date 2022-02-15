@@ -112,6 +112,6 @@ $ pyenv virtualenvs
 
 ### Resources
 * [Commands reference](https://github.com/pyenv/pyenv/blob/master/COMMANDS.md)
-* {% post_link install-python-on-ubuntu-xenial 'Build Python manually from source code' %}
+* [Build Python manually from source code](install-python-on-ubuntu-xenial)
 * [Passing configure options to a build process](https://github.com/pyenv/pyenv/issues/86)
 * [Pyenv troubleshooting](https://github.com/pyenv/pyenv/wiki#troubleshooting--faq)

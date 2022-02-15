@@ -71,6 +71,7 @@ As you can see we store current topic in a global variable, so once process rest
 That's it, now you are able to enhance it with any custom features you want. Happy coding!
 
 ### Resources
+
 * [Complete project on the Github](https://github.com/bmwant/tabtab)
 * [Related StackOverflow question](https://stackoverflow.com/questions/48432287/how-to-get-telegrams-channel-description-in-telethon)
-* {% post_link using-poetry-in-production 'Use Poetry in your project' %}
+* [Use Poetry in your project](using-poetry-in-production)

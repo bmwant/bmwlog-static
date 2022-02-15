@@ -107,7 +107,7 @@ $ python3 -m venv tictactoe  # Python 3.3+
 $ source tictactoe/bin/activate
 ```
 
-I personally prefer {% post_link using-pyenv-on-ubuntu 'pyenv' %}, so here's an equivalent example of creating virtual environment using this nice tool
+I personally prefer [pyenv](using-pyenv-on-ubuntu), so here's an equivalent example of creating virtual environment using this nice tool
 
 ```bash
 $ pyenv virtualenv 3.8.1 tictactoe

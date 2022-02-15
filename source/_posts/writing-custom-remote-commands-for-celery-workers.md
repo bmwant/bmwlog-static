@@ -80,6 +80,7 @@ messages.success(makr_safe(message))
 That's it for today, have a great weekend and see you soon.
 
 ### Resources
+
 * [Official docs on writing custom commands](http://docs.celeryproject.org/en/latest/userguide/workers.html#writing-your-own-remote-control-commands)
-* {% post_link monitoring-celery-queue-with-datadog 'Monitoring Celery queue with Datadog' %}
-* {% post_link custom-celery-routing 'Writing custom routing for Celery' %}
+* [Monitoring Celery queue with Datadog](monitoring-celery-queue-with-datadog)
+* [Writing custom routing for Celery](custom-celery-routing)

@@ -143,7 +143,7 @@ def rollout(self, policy):
 
 At each step we are asking an agent for its decision (an action produced by the policy) and receiving a reward and a next state from the environment. We do that until episode terminates by reaching the destination or exceeding our steps constraint.
 
-We can measure the results of the rollout and a result produced by another policy and in such way compare them. A good place to start here is always by providing some baseline for the return (some relative value we can compare later to). A **_random policy_** is usually used for that. Basically in each state driver will make its decisions by throwing a dice roll ({% post_link count-your-probabilities-using-python '[1]' %} {% post_link generating-events-to-count-probabilities-with-python '[2]' %}) and choosing an action based on that. Here's an implementation for the random policy.
+We can measure the results of the rollout and a result produced by another policy and in such way compare them. A good place to start here is always by providing some baseline for the return (some relative value we can compare later to). A **_random policy_** is usually used for that. Basically in each state driver will make its decisions by throwing a dice roll ([[1]](count-your-probabilities-using-python) [[2]](generating-events-to-count-probabilities-with-python)) and choosing an action based on that. Here's an implementation for the random policy.
 
 ```python
 MAX_TANK_VOLUME = 60
