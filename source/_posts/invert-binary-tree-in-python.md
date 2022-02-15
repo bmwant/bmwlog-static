@@ -10,7 +10,7 @@ date: 2022-02-06 21:51:10
 
 ### Problem
 
-[Binary tree](https://en.wikipedia.org/wiki/Binary_tree) is a data structure and one of the simplest form of [trees](https://en.wikipedia.org/wiki/Tree_(data_structure)). You might have heard about people complaining [[1]](https://twitter.com/mxcl/status/608682016205344768?lang=en) that during interviews they are asked to invert a binary tree. It may sound like something difficult, but in this article I'll show you really simple solution using recursion (see {% post_link recursion-in-python 'this article' %} for more recursion in Python). Inverting a tree basically means to switch places for right and left children of each node. Resulting tree will look like vertical mirroring of the input. Therefore if you know how to represent a tree within a code, you won't stuck adding just a couple of extra lines invoking recursive function.
+[Binary tree](https://en.wikipedia.org/wiki/Binary_tree) is a data structure and one of the simplest form of [trees](https://en.wikipedia.org/wiki/Tree_(data_structure)). You might have heard about people complaining [[1]](https://twitter.com/mxcl/status/608682016205344768?lang=en) that during interviews they are asked to invert a binary tree. It may sound like something difficult, but in this article I'll show you really simple solution using recursion (see [this article](recursion-in-python) for more recursion in Python). Inverting a tree basically means to switch places for right and left children of each node. Resulting tree will look like vertical mirroring of the input. Therefore if you know how to represent a tree within a code, you won't stuck adding just a couple of extra lines invoking recursive function.
 
 > **NOTE:** Python `3.10` is used throughout the article.
 

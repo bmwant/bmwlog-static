@@ -1085,6 +1085,11 @@
   "resolved" "https://registry.npmjs.org/hexo-pagination/-/hexo-pagination-1.0.0.tgz"
   "version" "1.0.0"
 
+"hexo-post-link@^1.0.0":
+  "integrity" "sha512-8R8e6HtAOdwsenFQWvuwcpi7clAoo6erMwbAQBRUTazioa/EY0WwRSdfCXmDmqfzxo2C/unJljuU1Uq24OAy9Q=="
+  "resolved" "https://registry.npmjs.org/hexo-post-link/-/hexo-post-link-1.0.0.tgz"
+  "version" "1.0.0"
+
 "hexo-renderer-ejs@^1.0.0":
   "integrity" "sha512-O925i69FG4NYO62oWORcPhRZZX0sPx1SXGKUS5DaR/lzajyiXH5i2sqnkj0ya0rNLXIy/D7Xmt7WbFyuQx/kKQ=="
   "resolved" "https://registry.npmjs.org/hexo-renderer-ejs/-/hexo-renderer-ejs-1.0.0.tgz"

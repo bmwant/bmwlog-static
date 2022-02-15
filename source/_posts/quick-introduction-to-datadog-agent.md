@@ -89,5 +89,5 @@ $ sudo datadog-agent flare
 This will create new support case and send all the troubleshooting information needed.
 
 ### Resources
-* {% post_link monitoring-celery-queue-with-datadog 'Monitoring Celery queue with DataDog' %}
+* [Monitoring Celery queue with DataDog](monitoring-celery-queue-with-datadog)
 * [DataDog check documentation](https://docs.datadoghq.com/monitors/check_summary/)

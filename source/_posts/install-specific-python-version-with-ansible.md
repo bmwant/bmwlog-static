@@ -91,5 +91,5 @@ $ pyenv install 3.5.2
 That's it! Stick with preferred solution and don't forget to reuse the approach writing ansible playbook for that.
 
 ### Resources
-* {% post_link install-python-on-ubuntu-xenial 'Install Python 3.6 on Ubuntu Xenial manually' %}
-* {% post_link stavumo-python-na-ubuntu 'Install Python 3.5 on Ubuntu manually' %}
+* [Install Python 3.6 on Ubuntu Xenial manually](install-python-on-ubuntu-xenial)
+* [Install Python 3.5 on Ubuntu manually](stavumo-python-na-ubuntu)
