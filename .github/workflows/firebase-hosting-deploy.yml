@@ -11,8 +11,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: npm ci && npm run build
-      - uses: FirebaseExtended/action-hosting-deploy@v0
+
+      - name: Build static pages
+        run: npm ci && npm run build
+
+      - name: Copy localized files
+        run: |
+          cp -R localized-files/ public/
+          cp public/localized-files/ru_ALL/index.html public/localized-files/ru_ALL/404.html
+          cp -R public/localized-files/ru_ALL public/localized-files/ALL_ru
+
+      - name: Deploy to Firebase
+        uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_BMWLOG_APP }}'

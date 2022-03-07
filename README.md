@@ -14,6 +14,8 @@ $ cd themes/artemis && npm run build  # rebuild theme with different params
 $ npm run serve  # check website locally
 
 $ cd themes/artemis && npm run watch  # for developing and changing styles
+
+$ firebase emulators:start  # preview site locally with firebase
 ```
 
 ### Editing
