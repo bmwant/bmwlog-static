@@ -19,3 +19,10 @@ if theme.google_analytics
         gtag('js', new Date());
 
         gtag('config', '#{theme.google_analytics}');
+
+script.
+  var langs = window.navigator.languages;
+  if (langs.includes('ru') && window.location.pathname !== '/') {
+    window.location.href = '/';
+  }
+
