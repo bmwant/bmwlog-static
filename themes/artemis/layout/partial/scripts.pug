@@ -21,8 +21,21 @@ if theme.google_analytics
         gtag('config', '#{theme.google_analytics}');
 
 script.
-  var langs = window.navigator.languages;
-  if (langs.includes('ru') && window.location.pathname !== '/') {
+  var fuckrussia = false;  // TODO: this actually should be true everywhere
+  if (window.navigator.language !== undefined && window.navigator.language.toLowerCase().includes('ru')) {
+    fuckrussia = true;
+  }
+
+  if (window.navigator.userLanguage !== undefined && window.navigator.userLanguage.toLowerCase().includes('ru')) {
+    fuckrussia = true;
+  }
+
+  var hasrulang = window.navigator.languages.map(x => x.toLowerCase()).map(x => x.includes('ru'));
+  if (hasrulang.includes(true)) {
+    fuckrussia = true;
+  }
+
+  if (fuckrussia && window.location.pathname !== '/') {
     window.location.href = '/';
   }
 
