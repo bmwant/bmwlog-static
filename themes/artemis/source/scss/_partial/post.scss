@@ -43,6 +43,14 @@
   }
 }
 
+.banner {
+  img {
+    display: block;
+    max-width: 480px;
+    margin: 1em auto;
+  }
+}
+
 .post-content {
   h2, h3, h4, h5, h6 {
       position: relative;

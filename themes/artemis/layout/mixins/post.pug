@@ -1,3 +1,10 @@
+mixin standWithUkraine()
+  <div class="banner">
+    <a target="_blank" rel="noopener" href="https://standforukraine.com/?referrer=bmwlog.pp.ua">
+      <img src="https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner-direct.svg" alt="Stand with Ukraine">
+    </a>
+  </div>
+
 mixin postInfo(item)
     .post-info
         a
@@ -45,6 +52,7 @@ mixin postList()
                     +postTitle(item.title)
         - })
 
+
 //- Post Page
 mixin post(item)
     .post
@@ -52,5 +60,6 @@ mixin post(item)
             h1.post-title
                 +postTitle(item.title)
             +postInfo(item)
+            +standWithUkraine()
             .post-content
                 != item.content

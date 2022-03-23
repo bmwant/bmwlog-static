@@ -3,6 +3,7 @@ title: Alter field migration with Peewee
 date: 2018-05-24 09:50:37
 tags: [sql, mysql, python, peewee, migrations, orm]
 author: Misha Behersky
+language: en
 ---
 
 [Peewee](http://docs.peewee-orm.com/en/latest/) - is very small though powerful ORM for Python. It even support migration within its own [playhouse](http://docs.peewee-orm.com/en/latest/peewee/playhouse.html#schema-migrations). In the simplest form you can write migrations like this

@@ -3,6 +3,7 @@ title: Automatically renew letsencrypt certificate with certbot
 date: 2018-06-19 10:09:38
 tags: [nginx, encryption, cron, https, certificate]
 author: Misha Behersky
+language: en
 ---
 
 Renewing your certificate is really easy with just `certbot renew` but it does expire once per 90 days, so it's a good idea to automate this process and stop worrying about your website being unavailable because of invalid certificate. We'll do that with a help of cron `crontab -e` and enter the command below
