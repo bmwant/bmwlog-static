@@ -3,6 +3,7 @@ title: Advanced wtforms usage
 date: 2018-06-08 11:08:24
 tags: [python, forms, web, validation, framework]
 author: Misha Behersky
+language: en
 ---
 
 WTForms is a powerful form validation and rendering library especially for web development. It's framework agnostic but there are packages that integrate it with popular web frameworks (e.g. [Flask WTF](https://flask-wtf.readthedocs.io/en/stable/) ). In this article I'm going to cover some advanced techniques which is not covered in documentation.
