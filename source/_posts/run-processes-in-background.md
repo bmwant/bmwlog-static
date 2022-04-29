@@ -67,7 +67,7 @@ $ reredirect -m output.log 22729
 $ ./reredirect -m output.log 22729
 ```
 
-You are still able to track progress and examine output with tail command `tail -f output.txt`
+You are still able to track progress and examine output with tail command `tail -f output.log`
 
 ![tail](/images/process_tail.png)
 
@@ -109,7 +109,7 @@ Lastly, meet [nohup](https://ss64.com/bash/nohup.html) utility which can also he
 $ nohup python script.py > output.log 2>&1 &
 ```
 
-This is the proper and safe way to execute process in the background and and ensure it will not mess current session with its output or terminate unexpectedly when session is closed.
+This is the proper and safe way to execute process in the background and ensure it will not mess current session with its output or terminate unexpectedly when session is closed.
 
 ### Use screen
 

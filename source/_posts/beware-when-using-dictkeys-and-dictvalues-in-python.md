@@ -3,6 +3,7 @@ title: Beware when using dict.keys() and dict.values()
 date: 2018-12-05 13:28:53
 tags: [python, dict, ordered, bug]
 author: Misha Behersky
+language: en
 ---
 
 Starting with Python3.7 `dict.keys()` and `dict.values()` preserves an insertion order [[1](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)] [[2](https://mail.python.org/pipermail/python-dev/2017-December/151283.html)] [[3](https://docs.python.org/3/library/stdtypes.html#typesmapping)].
