@@ -36,11 +36,11 @@ Suddenly you've realized that this is going to take couple of hours to finish an
 
 ![stopped process](/images/process_stopped.png)
 
-* Type `jobs` in the same shell. [This utility](https://man7.org/linux/man-pages/man1/jobs.1p.html) will list all jobs in current session. `jobs -l` will also display process ID or any other information available
+* Type `jobs` in the same shell. [This utility](https://ss64.com/bash/jobs.html) will list all jobs in current session. `jobs -l` will also display process ID or any other information available
 
 ![jobs list](/images/process_jobs.png)
 
-* Now we can use another utility called [bg](https://man7.org/linux/man-pages/man1/bg.1p.html) to start executing this job in background. Type `bg %1` to continue running our process in the background. Note how we reference a job by prefixing its number with `%` sign
+* Now we can use another utility called [bg](https://ss64.com/bash/bg.html) to start executing this job in background. Type `bg %1` to continue running our process in the background. Note how we reference a job by prefixing its number with `%` sign
 
 ![bg](/images/process_bg.png)
 
@@ -69,7 +69,6 @@ $ ./reredirect -m output.log 22729
 
 You are still able to track progress and examine output with tail command `tail -f output.txt`
 
-
 ![tail](/images/process_tail.png)
 
 * Last step in this entangled procedure is to make sure we can drop current active session without killing the process. This might be useful in case you plan to close ssh connection to the remote and then reconnect again for the updates. Shell has [disown](https://www.cyberciti.biz/faq/unix-linux-disown-command-examples-usage-syntax/) command which is designed for this purpose.
@@ -84,5 +83,40 @@ Note that referencing is exactly the same by the job number. However after detac
 
 ### Meet nohup
 
+If you want to follow a procedure described above from the very beginning you should first make sure all the output is written to a text file (to omit all the hacks with modifying processes at a runtime)
+
+```bash
+$ poetry run python script.py > output.log 2>&1
+```
+
+In this command we redirect *stdout* to a `output.log` file and then pointing *stderr* to the same location where *stdout* goes.
+
+Then you apply `Ctrl`-`Z` and `bg` trick to ensure process is running in the background. To simplify this you can initially add ampersand symbol (`&`) to the end of the command, so it will run as a backround process in the first place.
+
+```bash
+$ poetry run python script.py > output.log 2>&1 &
+```
+
+![background](/images/process_background.png)
+
+Note that you can always bring any process running in the background to foreground. [fg](https://ss64.com/bash/fg.html) does exactly this thing. Remember to refer the job by percentage sign and its number when invoking. `fg %1` will send first job to the foreground and you can again bring it to the background at any time needed.
+
+Next step would be to call `disown` on the job (like `disown %1`) to make sure we can safely close current shell session without interrupting our process.
+Lastly, meet [nohup](https://ss64.com/bash/nohup.html) utility which can also help us to omit this step if we plan to launch such a long-running background process. So, final version of the invocation of your command **should always look like this**
+
+```bash
+# nohup [your command goes here] > output.log 2>&1 &
+$ nohup python script.py > output.log 2>&1 &
+```
+
+This is the proper and safe way to execute process in the background and and ensure it will not mess current session with its output or terminate unexpectedly when session is closed.
 
 ### Use screen
+
+
+### Resources
+
+* [jobs utility](https://man7.org/linux/man-pages/man1/jobs.1p.html)
+* [nohup utility](https://man7.org/linux/man-pages/man1/nohup.1.html)
+* [bg command](https://man7.org/linux/man-pages/man1/bg.1p.html)
+* [fg command](https://man7.org/linux/man-pages/man1/fg.1p.html)
