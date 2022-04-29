@@ -113,6 +113,36 @@ This is the proper and safe way to execute process in the background and and ens
 
 ### Use screen
 
+There is a preferred way of running anything on the remote instance via ssh connection, so dropped connection will not affect work being done there. We can also use same tool for running background processes. First, install [screen](https://ss64.com/bash/screen.html) program
+
+```bash
+# Depending on the system you run
+$ sudo apt install -y screen
+# or
+$ sudo yum install -y screen
+```
+
+Next, type `screen` which will automatically move you into new session where you can simply run your script without any modifications
+
+```bash
+$ python script.py
+```
+
+and then detach from current screen session by typing `Ctrl`-`A` then `D`.
+
+To check the list of all active screens (and you can launch as many of them as you like) type this
+
+```bash
+$ screen -ls
+```
+
+To restore back into your detached session you can type command below and check the progress and output of your command
+
+```bash
+$ screen -r
+```
+
+There is a lot more of this utility and it's a really powerful tool to be used as a window manager / terminal multiplexer, but for the purpose of running a process in the background this should be enough. At this note I'm leaving you here with a bunch of extra links to check. Stay curious, fight for freedom 🇺🇦
 
 ### Resources
 
@@ -120,3 +150,4 @@ This is the proper and safe way to execute process in the background and and ens
 * [nohup utility](https://man7.org/linux/man-pages/man1/nohup.1.html)
 * [bg command](https://man7.org/linux/man-pages/man1/bg.1p.html)
 * [fg command](https://man7.org/linux/man-pages/man1/fg.1p.html)
+* [How to use screen utility](https://linuxize.com/post/how-to-use-linux-screen/)
