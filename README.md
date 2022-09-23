@@ -20,7 +20,7 @@ $ firebase emulators:start  # preview site locally with firebase
 
 ### Editing
 ```bash
-$ hexo new [layout] <title>  # check `scaffolds` directory for available layouts
+$ npx hexo new [layout] <title>  # check `scaffolds` directory for available layouts
 $ hexo new post "Test post"
 $ hexo new draft "New draft"
 $ hexo publish post "New draft"
