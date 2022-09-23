@@ -314,7 +314,7 @@ Requesting http://api.ipify.org using http://127.0.0.1:8081
 
 ....but! With such a simplicity we have to pay a very high price
 
-> Note: HTTPS requests are not supported at present.
+> **Note**: HTTPS requests are not supported at present.
 
 To deal with this we need to apply this workaround
 
