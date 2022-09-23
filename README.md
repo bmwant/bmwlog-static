@@ -1,6 +1,7 @@
 ## bmwlog
 
 ![Deploy](https://github.com/bmwant/bmwlog-static/actions/workflows/firebase-hosting-deploy.yml/badge.svg)
+[![EditorConfig](https://img.shields.io/badge/-EditorConfig-lightgrey?logo=editorconfig)](https://editorconfig.org/)
 
 This is static blog website generated with [Hexo](https://hexo.io/) using [Artemis](https://github.com/Dreyer/hexo-theme-artemis) theme.
 
