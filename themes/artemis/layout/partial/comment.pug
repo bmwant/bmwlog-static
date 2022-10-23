@@ -11,3 +11,13 @@ if theme.disqus && page.comments
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
     script(id='dsq-count-scr' src='//#{theme.disqus}.disqus.com/count.js' async)
+
+if theme.comments
+  script(
+    async,
+    src="https://utteranc.es/client.js",
+    repo="bmwant/bmwlog-static",
+    issue-term="pathname",
+    theme="github-light",
+    crossorigin="anonymous"
+  )
