@@ -50,3 +50,9 @@ $ hexo deploy -g  # to generate site before deployment
 ```markdown
 ![alt text](/images/picture.png)
 ```
+
+* Refer to another article
+
+```markdown
+[Link title](slug-for-the-article)
+```

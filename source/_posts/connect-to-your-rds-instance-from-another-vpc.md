@@ -3,6 +3,7 @@ title: Connect to your RDS instance from another VPC
 date: 2020-03-05 14:49:05
 tags: [aws, rds, vpc, devops]
 author: Misha Behersky
+language: en
 ---
 
 Suppose you have created a PostgreSQL database without public accessibility (we are talking about [AWS RDS](https://aws.amazon.com/rds/) right now) within some VPC (e.g. `VPC B`) and you have a regular EC2 instance in another VPC (e.g. `VPC A`). Now you want to connect a client (e.g. [psql](https://www.postgresql.org/docs/9.6/app-psql.html)) from an instance to database. VPC peering is a tool that you need to use in such a case

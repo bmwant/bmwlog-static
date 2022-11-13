@@ -3,6 +3,7 @@ title: Creating aiohttp web application with SQLite database
 date: 2018-03-08 07:53:10
 tags: [python, asyncio, aiohttp, sqlite, web]
 author: Misha Behersky
+language: en
 ---
 
 In this article I'm going to describe using SQLite database within your aiohttp web application. Actually, using this approach you can connect any [ODBC](https://en.wikipedia.org/wiki/Open_Database_Connectivity) compatible database. Begin with installing required dependencies ([Debian](https://en.wikipedia.org/wiki/Debian)-based system assumed)

@@ -3,6 +3,7 @@ title: Count your probabilities using Python
 date: 2019-01-02 14:30:03
 tags: [python, probability, algorithm, logic]
 author: Misha Behersky
+language: en
 ---
 
 ![cubes](/old/article/ca5da93f41ce32d6a16d7752eff8265b.jpg)
