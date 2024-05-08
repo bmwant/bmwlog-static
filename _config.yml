@@ -4,15 +4,15 @@
 
 # Site
 title: bmwlog
-subtitle: ''
-description: 'Some random thoughts pretending to emerge into the blog'
+subtitle: ""
+description: "Some random thoughts pretending to emerge into the blog"
 keywords:
 author: bmwant
 language: en
-timezone: ''
+timezone: ""
 
 # URL
-url: https://bmwlog.pp.ua
+url: https://bmwant.link
 permalink: :title/
 permalink_defaults:
 pretty_urls:
@@ -36,7 +36,7 @@ titlecase: false # Transform title into titlecase
 external_link:
   enable: true # Open external links in new tab
   field: site # Apply to the whole site
-  exclude: ''
+  exclude: ""
 filename_case: 1 # Transform to lowercase
 render_drafts: false
 post_asset_folder: false
@@ -46,21 +46,21 @@ highlight:
   enable: true
   line_number: true
   auto_detect: false
-  tab_replace: ''
+  tab_replace: ""
   wrap: true
   hljs: false
 prismjs:
   enable: false
   preprocess: true
   line_number: true
-  tab_replace: ''
+  tab_replace: ""
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  path: ''
+  path: ""
   per_page: 42
   order_by: -date
 
@@ -80,7 +80,7 @@ meta_generator: true
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 ## updated_option supports 'mtime', 'date', 'empty'
-updated_option: 'mtime'
+updated_option: "mtime"
 
 # Pagination
 ## Set per_page to 0 to disable pagination

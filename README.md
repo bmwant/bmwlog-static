@@ -5,7 +5,7 @@
 
 This is static blog website generated with [Hexo](https://hexo.io/) using [Artemis](https://github.com/Dreyer/hexo-theme-artemis) theme.
 
-🌎 Check [the website](https://bmwlog.pp.ua/)
+🌎 Check [the website](https://bmwant.link/)
 
 ### Installation
 
@@ -20,6 +20,7 @@ $ firebase emulators:start  # preview site locally with firebase
 ```
 
 ### Editing
+
 ```bash
 $ npx hexo new [layout] <title>  # check `scaffolds` directory for available layouts
 $ hexo new post "Test post"
@@ -28,6 +29,7 @@ $ hexo publish post "New draft"
 ```
 
 ### Deployment
+
 ```bash
 $ firebase init  # first time only
 $ firebase init hosting:github  # setup automated deployment via Github Actions
@@ -45,13 +47,13 @@ $ hexo deploy -g  # to generate site before deployment
 
 ### Post writing hints
 
-* Insert image
+- Insert image
 
 ```markdown
 ![alt text](/images/picture.png)
 ```
 
-* Refer to another article
+- Refer to another article
 
 ```markdown
 [Link title](slug-for-the-article)

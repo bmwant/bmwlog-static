@@ -17,9 +17,9 @@ with open('README.txt') as file:
 setup(name='MyModule',
       version='1.0',
       py_modules=['mymodule'],
-      author='Most Wanted',
+      author='Misha Behersky',
       author_email='bmwant@gmail.com',
-      url='https://bmwlog.pp.ua',
+      url='https://bmwant.link',
       description='Short module description',
       classifiers=[
           'Development Status :: 2 - Pre-Alpha',
@@ -34,7 +34,7 @@ setup(name='MyModule',
 )
 ```
 
-Вказуємо назву, версію, інформацію про автора та короткий опис. Якщо у вас файл детального опису у форматі [reStructuredText](http://docutils.sourceforge.net/rst.html) (такий часто використовують на Github, якщо потрібно звідкись взяти приклад) - в *long_description* записуємо текст з цього файлу або просто вводимо його вручну. Особливу увагу варто приділити *classifiers*: це дозволяє віднести ваш модуль до певної категорії, що допоможе знайти його іншим і вибрати серед аналогів. Список класифікаторів можна [подивитися тут](https://pypi.python.org/pypi?%3Aaction=list_classifiers). Якщо є проблеми з вибором ліцензії, можна не вказувати її взагалі або скористатися [помічником](http://choosealicense.com). В більшості випадків підійде [MIT License](http://en.wikipedia.org/wiki/MIT_License). Коли файл готовий можна приступити до створення архіву для встановлення.
+Вказуємо назву, версію, інформацію про автора та короткий опис. Якщо у вас файл детального опису у форматі [reStructuredText](http://docutils.sourceforge.net/rst.html) (такий часто використовують на Github, якщо потрібно звідкись взяти приклад) - в _long_description_ записуємо текст з цього файлу або просто вводимо його вручну. Особливу увагу варто приділити _classifiers_: це дозволяє віднести ваш модуль до певної категорії, що допоможе знайти його іншим і вибрати серед аналогів. Список класифікаторів можна [подивитися тут](https://pypi.python.org/pypi?%3Aaction=list_classifiers). Якщо є проблеми з вибором ліцензії, можна не вказувати її взагалі або скористатися [помічником](http://choosealicense.com). В більшості випадків підійде [MIT License](http://en.wikipedia.org/wiki/MIT_License). Коли файл готовий можна приступити до створення архіву для встановлення.
 
 ```bash
 $ python setup.py check
@@ -68,6 +68,6 @@ $ pip install mymodule==1.2
 $ pip install mymodule --upgrade
 ```
 
-В наступній статті я хочу більш детально описати скрипт `setup.py`, ознайомити з форматом написання *README*-файлів та публікацією пакетів (більш складних модулів та додаткових файлів).
+В наступній статті я хочу більш детально описати скрипт `setup.py`, ознайомити з форматом написання _README_-файлів та публікацією пакетів (більш складних модулів та додаткових файлів).
 
 Вдалої розробки.
