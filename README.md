@@ -11,6 +11,7 @@ This is static blog website generated with [Hexo](https://hexo.io/) using [Artem
 
 ```bash
 $ npm install
+$ npm install -g grunt-cli
 $ cd themes/artemis && npm run build  # rebuild theme with different params
 $ npm run serve  # check website locally
 
