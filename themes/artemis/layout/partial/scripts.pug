@@ -39,3 +39,41 @@ script.
     window.location.href = '/';
   }
 
+// Theme toggle script
+script.
+  (function() {
+    var body = document.body;
+    var toggleButton = document.getElementById('theme-toggle-button');
+
+    if (!toggleButton) {
+      console.error('Theme toggle button not found');
+      return;
+    }
+
+    // Function to apply the theme based on localStorage
+    function applyInitialTheme() {
+      var storedTheme = localStorage.getItem('theme');
+      if (storedTheme === 'dark') {
+        body.classList.add('dark-mode');
+      } else {
+        body.classList.remove('dark-mode'); // Explicitly set light by removing dark
+      }
+    }
+
+    // Apply theme on initial load
+    applyInitialTheme();
+
+    // Event listener for the toggle button
+    toggleButton.addEventListener('click', function(event) {
+      event.preventDefault(); // If using an <a> tag for the button
+      body.classList.toggle('dark-mode');
+
+      // Update localStorage
+      if (body.classList.contains('dark-mode')) {
+        localStorage.setItem('theme', 'dark');
+      } else {
+        localStorage.setItem('theme', 'light');
+      }
+    });
+  })();
+

@@ -1,0 +1,32 @@
+// themes/artemis/source/scss/_partial/_dark.scss
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+
+  a {
+    color: #bb86fc;
+  }
+
+  // Add more specific styles for other elements as needed
+  // For example, header, footer, posts, code blocks, etc.
+
+  .header { // Example: Assuming a .header class exists
+    background-color: #1f1f1f;
+    border-bottom: 1px solid #333;
+  }
+
+  .article-entry { // Example: For article content
+    a {
+      color: #bb86fc;
+      &:hover {
+        color: #9e6bff;
+      }
+    }
+  }
+
+  code, pre {
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    border: 1px solid #333;
+  }
+}

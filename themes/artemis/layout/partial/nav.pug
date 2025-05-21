@@ -6,3 +6,5 @@ ul.nav.nav-list
             - var act = !re.test(value) && '/' + page.current_url === value
             a.nav-list-link(class={active: act} href=url_for(value), target=tar)
                 != key.toUpperCase()
+    li.nav-list-item
+        a.nav-list-link#theme-toggle-button(href="#") Toggle Mode
