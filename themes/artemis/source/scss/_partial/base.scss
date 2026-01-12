@@ -107,7 +107,9 @@ hr {
 
 code {
   padding: 0.2em 0.4em;
-  box-shadow: 0 1px 1px rgba(0,0,0,0.125)
+  background-color: var(--bg-code);
+  color: var(--text-code);
+  border-radius: 3px;
 }
 
 iframe, video {

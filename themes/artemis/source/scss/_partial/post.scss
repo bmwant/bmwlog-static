@@ -149,7 +149,14 @@ code,
 pre {
   font-size: 0.8em;
   background-color: var(--bg-code);
+  color: var(--text-code);
   font-family: $code-font-family;
+}
+
+// Inline code styling
+code {
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
 }
 
 .highlight {
@@ -164,6 +171,7 @@ pre {
     border-collapse: collapse;
     padding: 0;
     margin: 0;
+    background-color: var(--bg-code);
   }
   .gutter {
     display: none;
@@ -172,6 +180,7 @@ pre {
     padding: 1.2em 1.4em;
     line-height: 1.5em;
     margin: 0;
+    background-color: var(--bg-code);
     .line {
       width: auto;
       height: 18px;

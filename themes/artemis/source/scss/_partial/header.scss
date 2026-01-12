@@ -29,17 +29,20 @@ header {
       line-height: 1.4;
     }
   }
+
+  // Theme toggle as nav item
+  .theme-toggle-item {
+    padding: 15px 0 15px 10px;
+    vertical-align: middle;
+  }
 }
 
 // Theme toggle button
 .theme-toggle {
-  position: absolute;
-  top: 19px;
-  right: 0;
   background: none;
   border: none;
   cursor: pointer;
-  padding: 8px;
+  padding: 6px;
   border-radius: 50%;
   display: flex;
   align-items: center;
