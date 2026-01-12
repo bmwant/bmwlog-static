@@ -66,6 +66,33 @@ if theme.google_analytics
 
         gtag('config', '#{theme.google_analytics}');
 
+//- Firebase Analytics (config loaded from environment variables)
+- var fbApiKey = process.env.FIREBASE_API_KEY
+- var fbAppId = process.env.FIREBASE_APP_ID
+if theme.firebase && theme.firebase.enabled && fbApiKey && fbAppId
+    script(type="module").
+        import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js';
+        import { getAnalytics, logEvent } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js';
+
+        const firebaseConfig = {
+            apiKey: '#{process.env.FIREBASE_API_KEY}',
+            authDomain: '#{process.env.FIREBASE_AUTH_DOMAIN}',
+            projectId: '#{process.env.FIREBASE_PROJECT_ID}',
+            storageBucket: '#{process.env.FIREBASE_STORAGE_BUCKET}',
+            messagingSenderId: '#{process.env.FIREBASE_MESSAGING_SENDER_ID}',
+            appId: '#{process.env.FIREBASE_APP_ID}',
+            measurementId: '#{process.env.FIREBASE_MEASUREMENT_ID}'
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+
+        // Log page view
+        logEvent(analytics, 'page_view', {
+            page_path: window.location.pathname,
+            page_title: document.title
+        });
+
 script.
   var fuckrussia = false;  // TODO: this actually should be true everywhere
   if (window.navigator.language !== undefined && window.navigator.language.toLowerCase().includes('ru')) {

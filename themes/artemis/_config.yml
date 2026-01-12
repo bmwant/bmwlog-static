@@ -18,6 +18,12 @@ disqus:
 mathjax: false
 google_analytics:
 
+# Firebase Analytics (configure via environment variables)
+# Set these env vars: FIREBASE_API_KEY, FIREBASE_AUTH_DOMAIN, FIREBASE_PROJECT_ID,
+# FIREBASE_STORAGE_BUCKET, FIREBASE_MESSAGING_SENDER_ID, FIREBASE_APP_ID, FIREBASE_MEASUREMENT_ID
+firebase:
+  enabled: true
+
 # Copyright Infomation
 copyright:
   since:
