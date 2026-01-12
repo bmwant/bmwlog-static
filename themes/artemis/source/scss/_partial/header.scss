@@ -30,11 +30,13 @@ header {
     }
   }
 
-  // Theme toggle as nav item
-  .theme-toggle-item {
-    padding: 15px 0 15px 10px;
-    vertical-align: middle;
-  }
+}
+
+// Theme toggle as nav item
+.nav-list-item.theme-toggle-item {
+  display: inline-block;
+  padding: 19px 0 19px 10px;
+  vertical-align: top;
 }
 
 // Theme toggle button
