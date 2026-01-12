@@ -15,17 +15,17 @@
     .post-title-link {
         display: block;
         margin-left: 125px;
-        color: #42b983;
+        color: var(--accent-green);
         word-wrap: break-word;
         &:hover {
             border-bottom: 0;
-            color: #267B54;
+            color: var(--accent-green-link-hover);
         }
     }
 
     .post-info {
         float: left;
         width: 125px;
-        color: #7f8c8d;
+        color: var(--text-meta);
     }
 }

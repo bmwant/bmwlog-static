@@ -6,12 +6,12 @@
         margin: 0 4px;
         padding: 4px 12px;
         border-radius: 4px;
-        border-bottom: 4px solid #3aa373;
+        border-bottom: 4px solid var(--accent-green-dark);
         font-size: 14px;
         color: #fff;
-        background-color: #4fc08d;
+        background-color: var(--accent-green-light);
         &:hover {
-            background-color: #22bd77;
+            background-color: var(--accent-green-hover);
         }
     }
 }

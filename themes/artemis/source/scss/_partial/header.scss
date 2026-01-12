@@ -1,5 +1,6 @@
 header {
   min-height: 60px;
+  position: relative;
 
   .logo-link {
     float: left;
@@ -27,5 +28,56 @@ header {
       font-size: 16px;
       line-height: 1.4;
     }
+  }
+}
+
+// Theme toggle button
+.theme-toggle {
+  position: absolute;
+  top: 19px;
+  right: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  color: var(--text-primary);
+
+  &:hover {
+    background-color: var(--bg-code);
+  }
+
+  &:focus {
+    outline: 2px solid var(--accent-green);
+    outline-offset: 2px;
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+  }
+
+  .sun-icon {
+    display: none;
+  }
+
+  .moon-icon {
+    display: block;
+  }
+}
+
+// Show sun icon in dark mode, moon in light mode
+[data-theme="dark"] .theme-toggle {
+  .sun-icon {
+    display: block;
+  }
+
+  .moon-icon {
+    display: none;
   }
 }

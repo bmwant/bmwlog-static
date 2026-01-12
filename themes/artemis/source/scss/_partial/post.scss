@@ -9,12 +9,12 @@
 
   .home-post-title {
     margin: 0.65em 0;
-    color: #2c3e50;
+    color: var(--text-heading);
     font-size: 1.1em;
   }
 
   .post-info {
-    color: #7f8c8d;
+    color: var(--text-meta);
     margin: 0.2em 1em 0.2em 0;
     white-space: nowrap;
   }
@@ -23,12 +23,12 @@
 .post-block {
   .post-title {
     margin: 0.65em 0;
-    color: #2c3e50;
+    color: var(--text-heading);
     font-size: 1.6em;
   }
 
   .post-info {
-    color: #7f8c8d;
+    color: var(--text-meta);
     margin: 0.2em 0;
     span {
         margin-left: 0.5rem;
@@ -39,7 +39,7 @@
       border-radius: 5px;
       font-size: 12px;
       color: white;
-      background-color: #E36B6B;
+      background-color: var(--accent-post-badge);
     }
   }
 }
@@ -58,7 +58,7 @@
       margin: 1em 0;
       a:before {
           content: "#";
-          color: #42b983;
+          color: var(--accent-green);
           position: absolute;
           left: -0.7em;
           top: -4px;
@@ -78,19 +78,19 @@
       font-size: 1.3em;
   }
   a {
-      color: #42b983;
+      color: var(--accent-green);
       word-break: break-all;
   }
   blockquote {
       margin: 2em 0;
       padding: 0.5em 1.3em;
-      border: 1px solid #eee;
+      border: 1px solid var(--border-light);
       border-radius: 3px;
-      border-left-color: #42b983;
+      border-left-color: var(--accent-green);
       border-left-width: 4px;
   }
   blockquote.warning {
-      border-left-color: #f0ad4e;
+      border-left-color: var(--accent-warning);
       border-left-width: 4px;
   }
   img {
@@ -106,10 +106,10 @@
       position: relative;
       margin: 2em 0;
       padding: 12px 24px 12px 30px;
-      border-left: 4px solid #f66;
+      border-left: 4px solid var(--accent-danger);
       border-top-right-radius: 2px;
       border-bottom-right-radius: 2px;
-      background-color: #f8f8f8;
+      background-color: var(--bg-code);
       br {
           display: none;
       }
@@ -127,7 +127,7 @@
       line-height: 20px;
       font-weight: bold;
       text-align: center;
-      background-color: #f66;
+      background-color: var(--accent-danger);
       font-family: $font-family;
   }
 }
@@ -138,7 +138,7 @@
   width: 100%;
   height: 100%;
   padding: 1em 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--bg-mask);
   z-index: 10;
   #mask-image {
       max-width: 95%;
@@ -148,7 +148,7 @@
 code,
 pre {
   font-size: 0.8em;
-  background-color: #f8f8f8;
+  background-color: var(--bg-code);
   font-family: $code-font-family;
 }
 
@@ -157,7 +157,7 @@ pre {
   margin: 1em 0;
   border-radius: 2px;
   line-height: 1.1em;
-  background-color: #f8f8f8;
+  background-color: var(--bg-code);
   overflow-x: auto;
   table, tr, td {
     width: 100%;
@@ -183,7 +183,7 @@ pre {
   position: absolute;
   top: 0;
   right: 0;
-  color: #ccc;
+  color: var(--text-code-label);
   text-align: right;
   font-size: 0.75em;
   padding: 5px 10px 0;
@@ -209,17 +209,17 @@ $signs: ("sql", "ini", "conf", "html", "javascript", "js", "bash", "css", "scss"
 }
 
 pre {
-    color: #525252;
+    color: var(--text-code);
 
     .comment,
     .quote {
-        color: #998;
+        color: var(--code-comment);
         font-style: italic
     }
     .keyword,
     .selector-tag,
     .subst {
-        color: #333;
+        color: var(--code-keyword);
         font-weight: bold
     }
     .number,
@@ -227,16 +227,16 @@ pre {
     .variable,
     .template-variable,
     .tag .attr {
-        color: #008080
+        color: var(--code-number)
     }
     .string,
     .doctag {
-        color: #d14
+        color: var(--code-string)
     }
     .title,
     .section,
     .selector-id {
-        color: #900;
+        color: var(--code-title);
         font-weight: bold
     }
     .subst {
@@ -244,36 +244,36 @@ pre {
     }
     .type,
     .class .title {
-        color: #458;
+        color: var(--code-type);
         font-weight: bold
     }
     .tag,
     .name,
     .attribute {
-        color: #000080;
+        color: var(--code-tag);
         font-weight: normal
     }
     .regexp,
     .link {
-        color: #009926
+        color: var(--code-regexp)
     }
     .symbol,
     .bullet {
-        color: #990073
+        color: var(--code-symbol)
     }
     .built_in,
     .builtin-name {
-        color: #0086b3
+        color: var(--code-builtin)
     }
     .meta {
-        color: #999;
+        color: var(--code-meta);
         font-weight: bold
     }
     .deletion {
-        background: #fdd
+        background: var(--code-deletion-bg)
     }
     .addition {
-        background: #dfd
+        background: var(--code-addition-bg)
     }
     .emphasis {
         font-style: italic
