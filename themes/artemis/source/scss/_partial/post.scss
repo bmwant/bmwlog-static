@@ -96,8 +96,13 @@
   img {
       display: block;
       // width: 100%;
-      max-width: 480px;
+      max-width: 100%;
       margin: 1em auto;
+  }
+  @media screen and (min-width: 700px) {
+    img {
+      max-width: 480px;
+    }
   }
   & > figure.highlight {
       box-shadow: 0 1px 2px rgba(0,0,0,0.125);
