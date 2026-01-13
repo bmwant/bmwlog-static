@@ -6,8 +6,8 @@
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "firebase deploy --only hosting",
-    "serve": "hexo server",
-    "serve-drafts": "hexo server --draft"
+    "serve": "concurrently \"hexo server\" \"npm run --prefix themes/artemis watch\"",
+    "serve-drafts": "concurrently \"hexo server --draft\" \"npm run --prefix themes/artemis watch\""
   },
   "hexo": {
     "version": "5.4.0"
@@ -29,5 +29,8 @@
     "hexo-renderer-stylus": "^2.0.0",
     "hexo-server": "^2.0.0",
     "hexo-theme-landscape": "^0.0.3"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
   }
 }
