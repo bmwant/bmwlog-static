@@ -2,10 +2,10 @@
   "name": "hexo-theme-artemis",
   "version": "1.0.0",
   "description": "A minimalist Hexo theme inspired by the Apollo theme",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "build": "grunt build",
-    "watch": "grunt watch"
+    "build": "vite build",
+    "watch": "vite build --watch"
   },
   "repository": {
     "type": "git",
@@ -23,10 +23,7 @@
   },
   "homepage": "https://github.com/Dreyer/hexo-theme-artemis#readme",
   "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-contrib-sass": "^1.0.0",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-sass": "^4.0.1",
-    "sass": "^1.97.2"
+    "sass": "^1.97.2",
+    "vite": "^6.0.0"
   }
 }
