@@ -1,5 +1,15 @@
 .home.post-list {
   margin: 2em 0;
+  .archive-year {
+    margin: 1.5em 0 0.5em;
+    padding-bottom: 0.3em;
+    border-bottom: 2px solid var(--accent-green);
+    color: var(--text-heading);
+    font-size: 1.3em;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
   .post-list-item {
     padding: 1em 0 2em;
     border-bottom: 1px solid #ddd;

@@ -38,8 +38,20 @@ mixin posts()
 //- Archived Posts Page (shows only archived posts)
 mixin archivedPosts()
     - var archivedList = site.posts.filter(function(post) { return post.archived; }).sort('-date');
+    - var yearCounts = {};
+    - archivedList.each(function(post) {
+    -   var y = date(post.date, 'YYYY');
+    -   yearCounts[y] = (yearCounts[y] || 0) + 1;
+    - });
+    - var currentYear = 0;
     ul.home.post-list
         - archivedList.each(function (item) {
+            - var itemYear = date(item.date, 'YYYY') - 0;
+            - var yearChanged = currentYear !== itemYear;
+            - currentYear = yearChanged ? itemYear : currentYear;
+            if yearChanged
+                h2.archive-year
+                    != itemYear + ' (' + yearCounts[itemYear] + ' posts)'
             article.home-post-block
                 +postInfo(item)
                 .home-post-title
