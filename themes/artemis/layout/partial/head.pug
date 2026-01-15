@@ -11,7 +11,11 @@ block description
 meta(name='viewport', content='width=device-width, initial-scale=1')
 meta(name='color-scheme', content='light dark')
 
-link(rel='icon', href=url_for(theme.favicon))
+if is_dev()
+    link(rel='icon', href=url_for('favicon-dev.ico'))
+else
+    link(rel='icon', href=url_for(theme.favicon))
+
 link(rel='stylesheet', href=url_for('css/theme.css'))
 link(rel='search', type='application/opensearchdescription+xml', href=url_for('atom.xml'), title=config.title)
 
