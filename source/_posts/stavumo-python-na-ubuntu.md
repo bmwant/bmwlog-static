@@ -4,6 +4,7 @@ date: 2015-10-20 17:39:12
 tags: [python, pip, ubuntu]
 author: Misha Behersky
 language: ua
+archived: true
 ---
 
 На початку вересня [вийшов реліз](https://www.python.org/downloads/release/python-350/) нового Пайтона (3.5) з купою крутих штук, особливо це корутини з `async/await` синтаксисом.

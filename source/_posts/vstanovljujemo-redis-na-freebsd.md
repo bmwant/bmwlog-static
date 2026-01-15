@@ -4,6 +4,7 @@ date: 2015-02-01 14:27:06
 tags: [redis, freebsd]
 author: Misha Behersky
 language: ua
+archived: true
 ---
 
 ### Встановлюємо Redis з портів

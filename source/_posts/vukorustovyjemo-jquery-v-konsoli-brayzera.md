@@ -4,6 +4,7 @@ date: 2015-06-15 22:02:32
 tags: [jquery, cdn, javascript]
 author: Misha Behersky
 language: ua
+archived: true
 ---
 
 Інколи необхідно використати в консолі можливості [jQuery](https://jquery.com), але на сайті бібліотека не підключена. Відкриваємо консоль `Ctrl`+`Shift`+`C` і вводимо код

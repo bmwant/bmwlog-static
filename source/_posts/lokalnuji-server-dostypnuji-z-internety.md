@@ -4,6 +4,7 @@ date: 2015-05-13 13:31:56
 tags: [localhost, ngrok, server]
 author: Misha Behersky
 language: ua
+archived: true
 ---
 
 ![ngrok](/old/article/cafff8b646cc3ff59100b94ef6e0a92b.png)

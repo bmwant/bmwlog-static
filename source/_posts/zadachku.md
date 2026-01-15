@@ -4,6 +4,7 @@ date: 2015-04-29 13:25:58
 tags: [python, логіка]
 author: Misha Behersky
 language: ua
+archived: true
 ---
 
 ### Знайти помилку в коді

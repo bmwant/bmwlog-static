@@ -3,6 +3,7 @@ title: Прикольні номерні знаки Київ
 date: 2018-06-07 09:57:31
 tags: [car, plates, fun, kyiv, junk]
 author: Misha Behersky
+archived: true
 ---
 
 ### Мажорні номера. Випуск 1

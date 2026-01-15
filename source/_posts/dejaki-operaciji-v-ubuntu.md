@@ -4,6 +4,7 @@ date: 2015-02-21 17:57:54
 tags: [ubuntu, postgresql]
 author: Misha Behersky
 language: ua
+archived: true
 ---
 
 ### Виділити swap-пам'ять

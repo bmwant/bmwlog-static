@@ -4,6 +4,7 @@ date: 2015-04-12 21:42:14
 tags: [python, mongo]
 author: Misha Behersky
 language: ua
+archived: true
 ---
 
 MongoDB - це нереляційна, документно-орієнтована база даних. Якщо проводити паралелі зі звичайними базами даних (MySQL і т.д.), то маємо таку термінологію:

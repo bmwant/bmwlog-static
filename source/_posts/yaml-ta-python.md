@@ -3,14 +3,15 @@ title: YAML та Python
 date: 2015-04-12 19:58:00
 tags: [yaml, python, serialization]
 author: Misha Behersky
+archived: true
 ---
 
 YAML (*YAML Ain't Markup Language*) - це стандарт серіалізації даних для багатьох мов програмування. Також його можна використовувати і для зберігання файлів-конфігурацій. Працювати з ним в Python достатньо просто. Якщо ви використовували [pickle](https://docs.python.org/2/library/pickle.html) або [json](https://docs.python.org/2/library/json.html) модулі, то тут все досить схоже. Підтримка реалізована модулем PyYAML.
 
-Для швидкого встановлення&nbsp;використовуємо pip
+Для швидкого встановлення використовуємо pip
 
 ```bash
-$ pip install pyyaml
+pip install pyyaml
 ```
 
 Створюємо файл конфігурації на основі словника

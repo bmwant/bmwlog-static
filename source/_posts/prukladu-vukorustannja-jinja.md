@@ -4,6 +4,7 @@ date: 2014-10-26 22:51:17
 tags: [jinja2, python, filters]
 author: Misha Behersky
 language: ua
+archived: true
 ---
 
 ### Пишемо власний фільтр

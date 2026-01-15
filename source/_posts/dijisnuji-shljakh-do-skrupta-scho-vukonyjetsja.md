@@ -4,6 +4,7 @@ date: 2015-12-08 12:12:51
 tags: [python, inspect]
 author: Misha Behersky
 language: ua
+archived: true
 ---
 
 Досі щоб дізнатися ім'я файлу, що зараз виконується чи шлях до нього, я використовував такі конструкції

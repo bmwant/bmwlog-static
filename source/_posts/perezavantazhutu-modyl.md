@@ -4,6 +4,7 @@ date: 2016-02-02 20:21:04
 tags: [python, console, module]
 author: Misha Behersky
 language: ua
+archived: true
 ---
 
 Часто виникає ситуація, коли потрібно протестити функцію з деякого модуля. Найпростіше досягти цього, відкривши інтерпретатор і в [REPL-режимі](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) зробити необхідний виклик

@@ -4,6 +4,7 @@ date: 2015-02-15 10:51:47
 tags: [ip, domain]
 author: Misha Behersky
 language: ua
+archived: true
 ---
 
 Якщо у вас є IP-адреса і потрібно знайти всі доменні імена, що ресолвляться в дану адресу, можна скористатися [цим сервісом](http://www.yougetsignal.com/tools/web-sites-on-web-server/). Просто введіть IP - і отримайте список всіх сайтів на цьому сервері.

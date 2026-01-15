@@ -4,6 +4,7 @@ date: 2015-02-21 17:57:54
 tags: [postgresql, pgadmin, freebsd]
 author: Misha Behersky
 language: ua
+archived: true
 ---
 
 Стандартно встановлюємо з портів

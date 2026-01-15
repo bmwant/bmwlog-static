@@ -4,6 +4,7 @@ date: 2015-03-24 13:53:59
 tags: [websocket, bottle, gunicorn, nginx]
 author: Misha Behersky
 language: ua
+archived: true
 ---
 
 ### Як подружити мікрофреймворк Bottle з веб-сокетами?

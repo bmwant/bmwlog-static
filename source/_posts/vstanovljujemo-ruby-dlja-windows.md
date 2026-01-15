@@ -4,6 +4,7 @@ date: 2015-05-14 17:02:14
 tags: [ruby, windows, mongo]
 author: Misha Behersky
 language: ua
+archived: true
 ---
 
 Встановити Ruby для Windows дуже просто, оскільки є спеціальний сайт [RubyInstaller](http://rubyinstaller.org/) з готовими інсталяторами. Завантажуємо [інсталятор](http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.2.2.exe), а також [набір для розробки](http://dl.bintray.com/oneclick/rubyinstaller/DevKit-mingw64-32-4.7.2-20130224-1151-sfx.exe) (може знадобитися для встановлення додаткових розширень). Після встановлення основного файлу і розпаковки іншого, переходимо в його директорію і виконуємо команди

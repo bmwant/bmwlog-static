@@ -4,6 +4,7 @@ date: 2015-10-26 18:14:27
 tags: [python, decorator]
 author: Misha Behersky
 language: ua
+archived: true
 ---
 
 ### Декоратори на основі класів

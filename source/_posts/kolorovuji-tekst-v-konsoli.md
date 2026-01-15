@@ -4,6 +4,7 @@ date: 2016-07-24 16:29:49
 tags: [python, utils, console]
 author: Misha Behersky
 language: ua
+archived: true
 ---
 
 Коли потрібно виводити багато тексту в консоль, хочеться мати можливість зробити акцент на деяких більш важливих рядках (змінити колір, додати фон, зробити [жирним](http://pikabu.ru/story/shutki_pro_tvoyu_zhirnuyu_mamu_1834442)). Для цього я дуже зручна бібліотека [py-term](https://github.com/gravmatt/py-term)

@@ -4,6 +4,7 @@ date: 2015-02-15 10:51:47
 tags: [modding, panda, junk]
 author: Misha Behersky
 language: ua
+archived: true
 ---
 
 Кришка корпусу мого комп'ютера повністю біла, тому я вирішив прикрасити її прикольним малюнком після того, як натрапив на програму [How to Draw (Android)](https://play.google.com/store/apps/details?id=com.artelplus.howtodraw&hl=en).

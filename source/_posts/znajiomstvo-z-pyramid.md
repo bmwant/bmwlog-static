@@ -4,6 +4,7 @@ date: 2015-05-29 13:04:44
 tags: [python, pyramid, web, framework]
 author: Misha Behersky
 language: ua
+archived: true
 ---
 
 [Pyramid](http://www.pylonsproject.org/) - один з популярних [WSGI](http://wsgi.readthedocs.org/en/latest/) веб-фреймворків для Пайтона, який містить багато вбудованих компонентів для швидкої розробки вашого проекту. Сумісний з Python 3.

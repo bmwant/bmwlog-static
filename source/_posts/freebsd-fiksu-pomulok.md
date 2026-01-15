@@ -4,6 +4,7 @@ date: 2014-12-20 15:27:12
 tags: [freebsd, bugs]
 author: Misha Behersky
 language: ua
+archived: true
 ---
 
 > pkg_add: unable to fetch / unable to get

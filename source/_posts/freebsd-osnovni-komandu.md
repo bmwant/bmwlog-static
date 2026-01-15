@@ -4,6 +4,7 @@ date: 2015-01-27 09:40:34
 tags: [freebsd, cheatsheet]
 author: Misha Behersky
 language: ua
+archived: true
 ---
 
 ### Змінити свій пароль

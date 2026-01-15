@@ -4,6 +4,7 @@ date: 2015-02-13 15:50:30
 tags: [bottle, gunicorn, nginx, supervisor, freebsd]
 author: Misha Behersky
 language: ua
+archived: true
 ---
 
 ### Розгортаємо FreeBSD+nginx+Gunicorn+bottle+Supervisor

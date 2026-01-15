@@ -4,6 +4,7 @@ date: 2016-07-21 15:08:31
 tags: [python, kpidata, utils]
 author: Misha Behersky
 language: ua
+archived: true
 ---
 
 В нас у KPIdata всі сервіси розділені на компоненти, кожному з яких відповідає окремий репозиторій

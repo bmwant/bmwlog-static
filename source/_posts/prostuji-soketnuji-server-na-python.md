@@ -4,6 +4,7 @@ date: 2014-11-11 16:42:22
 tags: [python, server, socket]
 author: Misha Behersky
 language: ua
+archived: true
 ---
 
 І відразу код

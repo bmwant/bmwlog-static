@@ -4,6 +4,7 @@ date: 2015-02-13 16:40:18
 tags: [flask, nginx, uwsgi, deploy]
 author: Misha Behersky
 language: ua
+archived: true
 ---
 
 ### Розгортаємо на Freebsd+nginx+uwsgi+Flask

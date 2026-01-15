@@ -4,6 +4,7 @@ date: 2015-02-10 21:41:24
 tags: [mysql, db, cheatsheet]
 author: Misha Behersky
 language: ua
+archived: true
 ---
 
 ### Створюємо базу даних та користувача для неї

@@ -1,6 +1,6 @@
 menu:
   Home: /
-  # Archives: /archives
+  Archive: /archive/
   GitHub: https://github.com/bmwant/bmwlog-static
   RSS: /atom.xml
 

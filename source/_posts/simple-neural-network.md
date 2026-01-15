@@ -4,6 +4,7 @@ date: 2018-11-20 21:09:15
 tags: [ai, neural-network, numpy, machine-learning, python]
 author: Misha Behersky
 language: ua
+archived: true
 ---
 
 Привіт, зараз дуже популярними є напрямки [штучного інтелекту](https://uk.wikipedia.org/wiki/%D0%A8%D1%82%D1%83%D1%87%D0%BD%D0%B8%D0%B9_%D1%96%D0%BD%D1%82%D0%B5%D0%BB%D0%B5%D0%BA%D1%82), [нейронних мереж](https://uk.wikipedia.org/wiki/%D0%A8%D1%82%D1%83%D1%87%D0%BD%D0%B0_%D0%BD%D0%B5%D0%B9%D1%80%D0%BE%D0%BD%D0%BD%D0%B0_%D0%BC%D0%B5%D1%80%D0%B5%D0%B6%D0%B0) та [машинного навчання](https://uk.wikipedia.org/wiki/%D0%9C%D0%B0%D1%88%D0%B8%D0%BD%D0%BD%D0%B5_%D0%BD%D0%B0%D0%B2%D1%87%D0%B0%D0%BD%D0%BD%D1%8F). Все це побудовано на досить нескладних концептах, які можна відтворити, знаючи трохи математики та програмування. Саме це ми і зробимо сьогодні, використовуючи Python 3.

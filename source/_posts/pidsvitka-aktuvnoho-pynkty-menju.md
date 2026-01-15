@@ -4,6 +4,7 @@ date: 2015-10-18 21:33:02
 tags: [js, jquery, css]
 author: Misha Behersky
 language: ua
+archived: true
 ---
 
 Простий сніпет, щоб додати клас `active` до елементу лінк вашого навбару.

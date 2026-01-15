@@ -4,6 +4,7 @@ date: 2014-10-20 21:19:14
 tags: [freebsd, python]
 author: Misha Behersky
 language: ua
+archived: true
 ---
 
 Спочатку виконуємо команду `wget` для завантаження архіву. Замість `2.7.8` можна вказати останню версію, доступну на даний момент.

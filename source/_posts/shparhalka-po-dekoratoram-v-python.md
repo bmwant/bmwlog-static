@@ -4,6 +4,7 @@ date: 2015-03-19 18:58:34
 tags: [python, cheatsheet, decorator]
 author: Misha Behersky
 language: ua
+archived: true
 ---
 
 Приклади для написання власних декораторів (з параметрами і без) на випадок, якщо синтаксис трохи підзабувся.
@@ -13,18 +14,18 @@ from functools import wraps
 
 def decorator(func):
     def wrapper(*args, **kwargs):
-        #Do something before func call
+        # Do something before func call
         result = func(*args, **kwargs)
-        #Do something after func call
+        # Do something after func call
         return result
     return wrapper
 
 def decorator(func):
     @wraps(func)
     def wrapper(*args, **kwargs):
-        #Do something before func call
+        # Do something before func call
         result = func(*args, **kwargs)
-        #Do something after func call
+        # Do something after func call
         return result
     return wrapper
 ```
@@ -41,7 +42,7 @@ def decorator(arg1, arg2):
             result = func(*args, **kwargs)
             # Do something after func call
 
-            #A lso you can use additonal arguments
+            # Also you can use additonal arguments
             result = result * arg1 + arg2
 
             return result

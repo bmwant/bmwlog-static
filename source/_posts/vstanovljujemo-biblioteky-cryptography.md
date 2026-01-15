@@ -4,6 +4,7 @@ date: 2014-12-19 16:56:14
 tags: [python, cryptography, pip, windows, wheels]
 author: Misha Behersky
 language: ua
+archived: true
 ---
 
 ### Встановлюємо Cryptography для Windows

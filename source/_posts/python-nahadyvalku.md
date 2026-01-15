@@ -4,6 +4,7 @@ date: 2014-12-09 21:23:52
 tags: [python, path, cheatsheet]
 author: Misha Behersky
 language: ua
+archived: true
 ---
 
 ### Робота з файлами

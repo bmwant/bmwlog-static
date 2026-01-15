@@ -4,6 +4,7 @@ date: 2015-05-13 11:28:27
 tags: [python, windows]
 author: Misha Behersky
 language: ua
+archived: true
 ---
 
 Така помилка виникає, коли ви намагаєтесь встановити додатковий модуль для Python, який написаний на C/C++. Але його спочатку треба скомпілювати для вашої системи. Для цього потрібно встановити компілятор від Microsoft, який іде в комплекті з Microsoft Visual C++ 2010 Express (можна завантажити безкоштовно [звідси](https://www.visualstudio.com/en-us/products/visual-studio-express-vs.aspx), посилання внизу сторінки). Метод працює для Python 3, 32-bit. Для Python 2, можливо буде потрібна 2008 версія.

@@ -4,6 +4,7 @@ date: 2016-03-29 07:18:17
 tags: [core, info, programming, fp]
 author: Misha Behersky
 language: ua
+archived: true
 ---
 
 ### Типізація

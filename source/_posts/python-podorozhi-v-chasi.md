@@ -4,6 +4,7 @@ date: 2015-08-28 14:54:44
 tags: [python, time, datetime, calendar]
 author: Misha Behersky
 language: ua
+archived: true
 ---
 
 В цій статті я хочу розказати про основні операції з датами/часом, які дозволяє здійснювати Пайтон за допомогою модулів стандартної бібліотеки. Мова бути йти про функції з використанням модулів [datetime](https://docs.python.org/3.4/library/datetime.html), [calendar](https://docs.python.org/3.4/library/calendar.html) та [time](https://docs.python.org/3.4/library/time.html).

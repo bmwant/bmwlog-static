@@ -4,6 +4,7 @@ date: 2015-02-01 14:19:03
 tags: [mongodb, freebsd]
 author: Misha Behersky
 language: ua
+archived: true
 ---
 
 Встановлюємо _Mongo_ з портів

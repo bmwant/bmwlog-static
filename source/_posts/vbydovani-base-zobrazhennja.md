@@ -4,6 +4,7 @@ date: 2016-07-08 16:44:14
 tags: [python, js, html, web]
 author: Misha Behersky
 language: ua
+archived: true
 ---
 
 [HTML дозволяє](http://caniuse.com/#feat=datauri) задавати зображення прямо в тегові за допомогою `dataURI` (зображення у вигляді base64-кодованого тексту). Виглядає це так

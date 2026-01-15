@@ -1,6 +1,6 @@
 ---
 title: Redis scripting
-tags: []
+tags: [redis, lua]
 language: en
 author: Misha Behersky
 date: 2021-10-01 13:39:25

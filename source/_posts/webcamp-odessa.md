@@ -4,6 +4,7 @@ date: 2016-08-17 22:01:37
 tags: [python, talk, slides, meetup]
 author: Misha Behersky
 language: ua
+archived: true
 ---
 
 30 липня, субота, в Одесі відбувся один з потоків [WebCamp 2016](http://webcamp.in.ua/index.html), присвячений Python.

@@ -16,15 +16,19 @@ after [saving a file](https://stackoverflow.com/a/11828573/1744914) you can list
 
 ### Troubleshooting
 If you have such an error
+
 ```
 Cert is due for renewal, auto-renewing...
 Could not choose appropriate plugin: The nginx plugin is not working; there may be problems with your existing configuration.
 The error was: NoInstallationError()
 ```
+
 it means that certbot cannot find nginx installation because of a cron not having same env (especially `PATH` variable) that is used to lookup the executable. Fix this slightly modifying a command
+
 ```
 0 0,12 * * *  PATH="$PATH:/sbin" python -c 'import random; import time; time.sleep(random.random() * 3600)' && certbot renew >> /var/log/certupdate.log 2>&1
 ```
+
 There are two modifications: the first one is to point to our nginx location (check whether it's the correct one with `which nginx` and the second one is to have our output in a file located within `/var/log` directory. That will allow us to figure out from logs potential future issues in case we have any.
 
 Also if you want to understand better what the command above does mean here is a quick hint on crontab syntax
