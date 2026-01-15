@@ -38,20 +38,13 @@ mixin posts()
 //- Archived Posts Page (shows only archived posts)
 mixin archivedPosts()
     - var archivedList = site.posts.filter(function(post) { return post.archived; }).sort('-date');
-    .archive
-        - var year = 0;
-        - var change = false;
+    ul.home.post-list
         - archivedList.each(function (item) {
-            - var itemYear = date(item.date, 'YYYY') - 0;
-            - change = year !== itemYear;
-            - year = change ? itemYear : year;
-            if change
-                h2.archive-year
-                    != year
-            .post-item
+            article.home-post-block
                 +postInfo(item)
-                a.post-title-link(href=url_for(item.path))
-                    +postTitle(item.title)
+                .home-post-title
+                    a.post-title-link(href=url_for(item.path))
+                        +postTitle(item.title)
         - })
 
 //- Archive Page
