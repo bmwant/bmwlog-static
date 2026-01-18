@@ -156,6 +156,8 @@ pre {
   background-color: var(--bg-code);
   color: var(--text-code);
   font-family: $code-font-family;
+  tab-size: 4;
+  -moz-tab-size: 4;
 }
 
 // Inline code styling
