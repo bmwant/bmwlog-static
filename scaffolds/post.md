@@ -1,7 +1,7 @@
 ---
 title: {{ title }}
 date: {{ date }}
-tags: []
+tags: {{ tags }}
 author: Misha Behersky
 language: en
 ---
