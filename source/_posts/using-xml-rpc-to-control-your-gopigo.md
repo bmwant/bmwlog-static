@@ -75,7 +75,7 @@ except KeyboardInterrupt:
 
 
 ### Creating a client
-Implementing a client is much simpler though we'll add some complexity because of using [Tkinter](https://docs.python.org/3/library/tkinter.html) (make sure your Python support it following the instructions [here]()).
+Implementing a client is much simpler though we'll add some complexity because of using [Tkinter](https://docs.python.org/3/library/tkinter.html) (follow installation instructions [here](https://tkdocs.com/tutorial/install.html)).
 
 ```python
 import xmlrpc.client

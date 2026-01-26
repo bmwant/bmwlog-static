@@ -7,7 +7,7 @@ date: 2021-06-09 12:10:38
 ---
 
 
-We are using docker/[docker-compose](https://docs.docker.com/compose/) as a development environment for our project and to sync the code between container and IDE [volume]() is used. Unfortunately, performance for the file-related operations on MacOS is really horrible and it's kinda a [well-known issue](https://github.com/docker/for-mac/issues/1592).
+We are using docker/[docker-compose](https://docs.docker.com/compose/) as a development environment for our project and to sync the code between container and IDE [volume](https://docs.docker.com/reference/compose-file/volumes/) is used. Unfortunately, performance for the file-related operations on MacOS is really horrible and it's kinda a [well-known issue](https://github.com/docker/for-mac/issues/1592).
 
 Common solution usually is to set `cached` option on a volume like this (`.` is a current working directory for the project)
 
@@ -40,14 +40,14 @@ nfs.server.mount.require_resv_port = 0
 Now restart the daemon to pick up added changes
 
 ```bash
-$ sudo nfsd restart
-$ sudo nfsd status
+sudo nfsd restart
+sudo nfsd status
 ```
 
 We are ready to adjust `docker-compose.yml` file and mount volume the new way
 
 ```bash
-$ cp docker-compose.yml docker-compose-nfs.yml
+cp docker-compose.yml docker-compose-nfs.yml
 ```
 
 A copy of configuration is created not to conflict with your teammates who have different operating systems and this configration will be invalid for them. If you are doing this just for yourself it's probably a good idea to even add this file to `.gitignore`.
@@ -74,7 +74,7 @@ volumes:
 And start your project as usually explicitly providing compose configuration via `-f` flag
 
 ```bash
-$ docker-compose -f docker-compose-nfs.yml up -d
+docker-compose -f docker-compose-nfs.yml up -d
 ```
 
 That's it, let's check what has been changed about performance.
