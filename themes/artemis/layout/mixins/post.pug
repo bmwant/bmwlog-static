@@ -13,6 +13,14 @@ mixin postInfo(item)
             a.post-from(href=item.from, target='_blank', title=item.from)
                 != __('translate_original')
 
+mixin postTags(item)
+    if item.tags && item.tags.length
+        .post-tags
+            - item.tags.each(function(tag) {
+                a.post-tag(href=url_for(tag.path))
+                    != tag.name
+            - })
+
 mixin postTitle(title)
     if title
         != title
@@ -85,6 +93,7 @@ mixin post(item)
             h1.post-title
                 +postTitle(item.title)
             +postInfo(item)
+            +postTags(item)
             +standWithUkraine()
             .post-content
                 != item.content
