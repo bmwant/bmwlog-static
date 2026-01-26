@@ -3,7 +3,10 @@ ul.nav.nav-list
         li.nav-list-item
             - var re = /^(http|https):\/\/*/gi;
             - var tar = re.test(value) ? '_blank' : '_self'
-            - var act = !re.test(value) && '/' + page.current_url === value
+            - var currentPath = '/' + (page.path || '').replace(/index\.html$/, '').replace(/\/$/, '')
+            - var menuPath = value === '/' ? '/' : value.replace(/\/$/, '')
+            - var currentNorm = currentPath === '/' ? '/' : currentPath
+            - var act = !re.test(value) && (currentNorm === menuPath)
             a.nav-list-link(class={active: act} href=url_for(value), target=tar)
                 != key.toUpperCase()
     li.nav-list-item.theme-toggle-item
