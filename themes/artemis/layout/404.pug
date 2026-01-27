@@ -20,14 +20,23 @@ html(lang=config.language)
                 }
             })();
         style.
+            html, body {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                overflow: hidden;
+            }
+
             .error-page {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                min-height: calc(100vh - 200px);
+                height: 100vh;
+                height: 100dvh;
                 text-align: center;
-                padding: 2rem 1rem;
+                padding: 1rem;
+                box-sizing: border-box;
             }
 
             .doge-container {
@@ -136,32 +145,16 @@ html(lang=config.language)
                 }
             }
     body
-        .wrap
-            header
-                h1.branding
-                    a(href=url_for('/'), title=config.title)
-                        if theme.logo
-                            img.logo-image(src=url_for(theme.logo), alt='logo')
-                        else
-                            = config.title
-                include partial/nav.pug
-            main.container
-                .error-page
-                    .doge-container
-                        img.doge-image(src=url_for('/logo.png'), alt='Doge')
-                        span.doge-speech.speech-wow wow
-                        span.doge-speech.speech-such such empty
-                        span.doge-speech.speech-much much lost
-                        span.doge-speech.speech-very very 404
-                    h1.error-code 404
-                    h2.error-title Page Not Found
-                    p.error-message.
-                        The page you're looking for doesn't exist or has been moved.
-                        Much sad. Such disappoint.
-                    a.home-button(href=url_for('/')) Back to Home
-            footer
-                .copyright
-                    p
-                        | &copy; #{date(Date.now(), 'YYYY')}
-                        a(href=theme.copyright.url) bmwant
-        include partial/scripts.pug
+        .error-page
+            .doge-container
+                img.doge-image(src=url_for('/logo.png'), alt='Doge')
+                span.doge-speech.speech-wow wow
+                span.doge-speech.speech-such such empty
+                span.doge-speech.speech-much much lost
+                span.doge-speech.speech-very very 404
+            h1.error-code 404
+            h2.error-title Page Not Found
+            p.error-message.
+                The page you're looking for doesn't exist or has been moved.
+                Much sad. Such disappoint.
+            a.home-button(href=url_for('/')) Back to Home
