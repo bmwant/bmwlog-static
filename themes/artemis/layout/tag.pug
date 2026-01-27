@@ -5,7 +5,9 @@ block container
     - var tagData = site.tags.findOne({name: page.tag})
     - var totalPosts = tagData ? tagData.posts.length : page.posts.length
     h2.archive-year
-        != "Posts tagged with '" + page.tag + "' (" + totalPosts + " items)"
+        | Posts tagged with
+        span.tag-accent= page.tag
+        |  (#{totalPosts} items)
     ul.home.post-list
         - page.posts.each(function (item) {
             article.home-post-block
