@@ -8,7 +8,9 @@
     ],
     "i18n": {
       "root": "/localized-files"
-    }
+    },
+    "cleanUrls": true,
+    "trailingSlash": false
   },
   "emulators": {
     "hosting": {

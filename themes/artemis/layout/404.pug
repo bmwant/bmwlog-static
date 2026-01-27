@@ -1,0 +1,167 @@
+doctype
+html(lang=config.language)
+    head
+        meta(charset='utf-8')
+        meta(name='X-UA-Compatible', content='IE=edge')
+        title 404 - Page Not Found | #{config.title}
+        meta(name='description', content='Such empty. Much lost. Page not found.')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        meta(name='color-scheme', content='light dark')
+        link(rel='icon', href=url_for(theme.favicon))
+        link(rel='stylesheet', href=url_for('css/theme.css'))
+        //- Inline script to prevent flash of wrong theme
+        script.
+            (function() {
+                var savedTheme = localStorage.getItem('theme');
+                if (savedTheme) {
+                    document.documentElement.setAttribute('data-theme', savedTheme);
+                } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                }
+            })();
+        style.
+            .error-page {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                min-height: calc(100vh - 200px);
+                text-align: center;
+                padding: 2rem 1rem;
+            }
+
+            .doge-container {
+                position: relative;
+                margin-bottom: 2rem;
+            }
+
+            .doge-image {
+                max-width: 200px;
+                width: 100%;
+                height: auto;
+                animation: float 3s ease-in-out infinite;
+            }
+
+            @keyframes float {
+                0%, 100% { transform: translateY(0px); }
+                50% { transform: translateY(-10px); }
+            }
+
+            .doge-speech {
+                position: absolute;
+                font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+                font-weight: bold;
+                font-size: 1rem;
+                color: var(--accent-green);
+                animation: pulse 2s ease-in-out infinite;
+            }
+
+            @keyframes pulse {
+                0%, 100% { opacity: 1; }
+                50% { opacity: 0.7; }
+            }
+
+            .speech-wow { top: -10px; left: -60px; color: #ff6b6b; }
+            .speech-such { top: 30px; right: -80px; color: var(--accent-green); }
+            .speech-much { bottom: 40px; left: -70px; color: #ffc04f; }
+            .speech-very { bottom: 10px; right: -60px; color: #42b983; }
+
+            .error-code {
+                font-size: 6rem;
+                font-weight: bold;
+                color: var(--accent-green);
+                margin: 0;
+                line-height: 1;
+            }
+
+            .error-title {
+                font-size: 1.8rem;
+                color: var(--text-heading);
+                margin: 0.5rem 0 1rem;
+            }
+
+            .error-message {
+                font-size: 1.1rem;
+                color: var(--text-meta);
+                margin-bottom: 2rem;
+                max-width: 400px;
+            }
+
+            .home-button {
+                display: inline-block;
+                padding: 12px 24px;
+                background-color: var(--accent-green);
+                color: #fff;
+                text-decoration: none;
+                border-radius: 4px;
+                font-size: 1rem;
+                transition: background-color 0.3s ease;
+                border-bottom: 4px solid var(--accent-green-dark);
+            }
+
+            .home-button:hover {
+                background-color: var(--accent-green-hover);
+            }
+
+            @media screen and (max-width: 700px) {
+                .error-code {
+                    font-size: 4rem;
+                }
+
+                .error-title {
+                    font-size: 1.4rem;
+                }
+
+                .doge-image {
+                    max-width: 150px;
+                }
+
+                .doge-speech {
+                    font-size: 0.85rem;
+                }
+
+                .speech-wow { left: -40px; }
+                .speech-such { right: -50px; }
+                .speech-much { left: -50px; }
+                .speech-very { right: -40px; }
+            }
+
+            @media screen and (max-width: 400px) {
+                .doge-speech {
+                    display: none;
+                }
+
+                .doge-container {
+                    margin-bottom: 1rem;
+                }
+            }
+    body
+        .wrap
+            header
+                h1.branding
+                    a(href=url_for('/'), title=config.title)
+                        if theme.logo
+                            img.logo-image(src=url_for(theme.logo), alt='logo')
+                        else
+                            = config.title
+                include partial/nav.pug
+            main.container
+                .error-page
+                    .doge-container
+                        img.doge-image(src=url_for('/logo.png'), alt='Doge')
+                        span.doge-speech.speech-wow wow
+                        span.doge-speech.speech-such such empty
+                        span.doge-speech.speech-much much lost
+                        span.doge-speech.speech-very very 404
+                    h1.error-code 404
+                    h2.error-title Page Not Found
+                    p.error-message.
+                        The page you're looking for doesn't exist or has been moved.
+                        Much sad. Such disappoint.
+                    a.home-button(href=url_for('/')) Back to Home
+            footer
+                .copyright
+                    p
+                        | &copy; #{date(Date.now(), 'YYYY')}
+                        a(href=theme.copyright.url) bmwant
+        include partial/scripts.pug
