@@ -1,6 +1,38 @@
 .paginator {
     margin: 4em 0;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+
+    .page-number {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 36px;
+        height: 36px;
+        padding: 0 8px;
+        border-radius: 4px;
+        font-size: 14px;
+        color: var(--text-primary);
+        background-color: var(--bg-code);
+        text-decoration: none;
+        transition: all 0.2s ease;
+
+        &:hover {
+            background-color: var(--accent-green);
+            color: #fff;
+        }
+
+        &.current {
+            background-color: var(--accent-green);
+            color: #fff;
+            font-weight: bold;
+        }
+    }
+
+    // Keep prev/next for post navigation
     .prev, .next {
         display: inline-block;
         margin: 0 4px;

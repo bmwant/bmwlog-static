@@ -1,13 +1,12 @@
 mixin home()
-    - var prev = page.prev_link
-    - var next = page.next_link
-    .paginator
-        if page.prev
-            a.prev(href=url_for(prev))
-                != __('prev')
-        if page.next
-            a.next(href=url_for(next))
-                != __('next')
+    if page.total > 1
+        .paginator
+            - for (var i = 1; i <= page.total; i++)
+                if i === page.current
+                    span.page-number.current= i
+                else
+                    - var pageUrl = i === 1 ? page.base || '/' : (page.base || '/') + 'page/' + i + '/'
+                    a.page-number(href=url_for(pageUrl))= i
 
 mixin post()
     - var prev = page.prev ? page.prev.path : false;
